@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FortiFocus - Smart Study Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fortifocus.css">
+</head>
+<body>
+<div class="page-progress" id="pageProgress"></div>
+
+<nav class="site-nav" id="siteNav">
+  <a class="nav-brand" href="#">Forti<em>Focus</em></a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#stats">Stats</a>
+    <a href="#how">How It Works</a>
+    <a href="#testimonials">Reviews</a>
+  </div>
+  <div class="nav-actions">
+    <button class="theme-toggle-nav" id="themeBtn" type="button" aria-label="Switch to dark mode">
+      <span class="theme-toggle-thumb"></span>
+      <span class="theme-toggle-text" id="themeBtnLabel">Light</span>
+    </button>
+    <a href="index.html" class="btn-nav btn-primary-nav">Download</a>
+  </div>
+</nav>
+
+<main>
+  <section class="hero section-shell">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">
+          <div class="eyebrow-dot"></div>
+          Smart Study Tracking - Now Live
+        </div>
+        <h1>
+          Study <em>smarter</em><br>
+          build momentum that <span class="accent-word">sticks</span>
+        </h1>
+        <p class="hero-sub">
+          FortiFocus helps you turn study time into visible progress with focused sessions, streak tracking, and an AI companion that keeps you moving.
+        </p>
+        <div class="hero-cta">
+          <a href="index.html" class="btn-hero btn-hero-primary">Download Now &rarr;</a>
+          <a href="#features" class="btn-hero btn-hero-ghost">See How It Works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-val sage" id="counterSessions">0</div>
+            <div class="hero-stat-label">Sessions Logged</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-val amber" id="counterMinutes">0</div>
+            <div class="hero-stat-label">Minutes Focused</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-val sky" id="counterStreaks">0</div>
+            <div class="hero-stat-label">Streaks Built</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-val rose" id="counterRate">0%</div>
+            <div class="hero-stat-label">Avg Success Rate</div>
+          </div>
+        </div>
+        <div class="trust-strip reveal reveal-delay-3">
+          <span class="trust-label">Students use FortiFocus for</span>
+          <div class="trust-items">
+            <span>Daily routines</span>
+            <span>Exam prep</span>
+            <span>AI study help</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+
+        <article class="focus-board animate-on-view">
+          <div class="board-top">
+            <div class="board-chip board-chip-live">Live Session</div>
+            <div class="board-pill">Calculus Sprint</div>
+          </div>
+          <div class="board-main">
+            <div class="board-ring">
+              <svg width="180" height="180" viewBox="0 0 180 180" aria-hidden="true">
+                <circle cx="90" cy="90" r="72" fill="none" stroke="var(--paper-3)" stroke-width="14"></circle>
+                <circle class="ring-anim" cx="90" cy="90" r="72" fill="none" stroke="var(--sage)" stroke-width="14" stroke-linecap="round" stroke-dasharray="452" stroke-dashoffset="158"></circle>
+              </svg>
+              <div class="board-ring-copy">
+                <div class="ring-preview-time">18:32</div>
+                <div class="ring-preview-phase">Deep Focus</div>
+              </div>
+            </div>
+
+            <div class="board-side">
+              <div class="mini-metric">
+                <div class="mini-metric-top">
+                  <span>Focus score</span>
+                  <strong>91%</strong>
+                </div>
+                <div class="fill-bar"><span style="--fill: 91%;"></span></div>
+              </div>
+              <div class="mini-metric">
+                <div class="mini-metric-top">
+                  <span>Task completion</span>
+                  <strong>74%</strong>
+                </div>
+                <div class="fill-bar amber-fill"><span style="--fill: 74%;"></span></div>
+              </div>
+              <div class="session-stack">
+                <div class="session-stack-head">
+                  <span>Today's Queue</span>
+                  <span>3 items</span>
+                </div>
+                <div class="session-item">
+                  <span>Integrals review</span>
+                  <strong>08:30</strong>
+                </div>
+                <div class="session-item">
+                  <span>Practice set</span>
+                  <strong>11:00</strong>
+                </div>
+                <div class="session-item">
+                  <span>SEMAJ recap</span>
+                  <strong>12:15</strong>
+                </div>
+              </div>
+              <div class="dur-pills">
+                <div class="dur-pill">15m</div>
+                <div class="dur-pill active">25m</div>
+                <div class="dur-pill">30m</div>
+                <div class="dur-pill">45m</div>
+                <div class="dur-pill">60m</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="floating-card floating-card-one">
+          <div class="floating-kicker">Current streak</div>
+          <strong>14 days</strong>
+          <span>Consistency is compounding.</span>
+        </div>
+        <div class="floating-card floating-card-two">
+          <div class="floating-kicker">AI nudge</div>
+          <strong>Try a 5 minute recap next.</strong>
+        </div>
+        <div class="floating-card floating-card-three">
+          <div class="floating-kicker">This week</div>
+          <strong>12.6 focused hours</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-arrow"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="features" class="section-shell">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">What You Get</div>
+        <h2 class="section-heading">Everything you need to <em>lock in</em></h2>
+        <p class="section-sub">Built for students and self-learners who want accountability, visible progress, and a study experience that feels motivating from the first session.</p>
+      </div>
+
+      <div class="feature-band reveal reveal-delay-1">
+        <div class="feature-band-card">
+          <span>Designed for flow</span>
+          <strong>Cleaner visual rhythm across every section</strong>
+        </div>
+        <div class="feature-band-card">
+          <span>Theme ready</span>
+          <strong>Balanced light and dark modes with one toggle</strong>
+        </div>
+        <div class="feature-band-card">
+          <span>More motion</span>
+          <strong>Animated cards, counters, bars, and scroll reveals</strong>
+        </div>
+      </div>
+
+      <div class="features-layout">
+        <div class="feature-card big sage reveal reveal-delay-1">
+          <div>
+            <div class="feature-icon icon-sage">TMR</div>
+            <div class="feature-title">Precision Focus Timer</div>
+            <p class="feature-desc">Choose a session length that fits your energy. The timer keeps you visually grounded while every study block is logged with subject, outcome, and momentum data.</p>
+            <div class="tag-row">
+              <span class="tag-pill tag-sage">Pomodoro-style</span>
+              <span class="tag-pill tag-sage">Session logging</span>
+              <span class="tag-pill tag-sage">Stop tracking</span>
+            </div>
+          </div>
+          <div class="timer-preview animate-on-view">
+            <div class="ring-preview">
+              <svg width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--paper-3)" stroke-width="8"></circle>
+                <circle class="ring-anim" cx="60" cy="60" r="50" fill="none" stroke="var(--sage)" stroke-width="8" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="160"></circle>
+              </svg>
+              <div class="ring-preview-text">
+                <div class="ring-preview-time">18:32</div>
+                <div class="ring-preview-phase">Focusing</div>
+              </div>
+            </div>
+            <div class="dur-pills">
+              <div class="dur-pill">15m</div>
+              <div class="dur-pill active">25m</div>
+              <div class="dur-pill">30m</div>
+              <div class="dur-pill">45m</div>
+              <div class="dur-pill">60m</div>
+            </div>
+            <div class="session-inline">
+              <span>Subject</span>
+              <strong>Math Chapter 7</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card amber reveal reveal-delay-2">
+          <div class="feature-icon icon-amber">STK</div>
+          <div class="feature-title">Streak Tracker</div>
+          <p class="feature-desc">A 6 week heatmap makes consistency tangible. Current streak, best streak, and active day count stay visible so your habit feels real.</p>
+          <div class="streak-showcase" aria-hidden="true"></div>
+          <div class="stat-chip amber-chip">14 day streak and climbing</div>
+        </div>
+
+        <div class="feature-card sky reveal reveal-delay-3">
+          <div class="feature-icon icon-sky">AI</div>
+          <div class="feature-title">SEMAJ AI Study Chat</div>
+          <p class="feature-desc">Ask subject questions, get study strategies, and pull yourself out of a slump without leaving the app.</p>
+          <div class="chat-preview animate-on-view">
+            <div class="cp-msg">
+              <div class="cp-av">AI</div>
+              <div class="cp-bubble">What subject are you working on today?</div>
+            </div>
+            <div class="cp-msg user">
+              <div class="cp-av user">ME</div>
+              <div class="cp-bubble user-bubble">Calculus integration and review drills.</div>
+            </div>
+            <div class="cp-msg">
+              <div class="cp-av">AI</div>
+              <div class="cp-bubble">Perfect. Start with u-substitution, then spend 5 minutes checking where you lose signs.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card rose reveal reveal-delay-4">
+          <div class="feature-icon icon-rose">HIS</div>
+          <div class="feature-title">Full Session History</div>
+          <p class="feature-desc">Every session is logged with subject, duration, completion status, and timestamp so you can review what is working and where you are dropping off.</p>
+          <div class="history-stack">
+            <div class="history-item">
+              <div>
+                <div class="history-title">Physics Revision</div>
+                <div class="history-time">Today, 10:30 AM</div>
+              </div>
+              <span class="tag-pill tag-sage">Done</span>
+            </div>
+            <div class="history-item">
+              <div>
+                <div class="history-title">English Essay Draft</div>
+                <div class="history-time">Yesterday, 3:45 PM</div>
+              </div>
+              <span class="tag-pill tag-stop">Stopped</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="stats" class="section-shell section-muted">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">By the Numbers</div>
+        <h2 class="section-heading">Progress you can <em>actually</em> measure</h2>
+        <p class="section-sub">FortiFocus surfaces the metrics that matter so you always know how much effort you are making and how well that effort is landing.</p>
+      </div>
+
+      <div class="stats-showcase">
+        <div class="stat-showcase-card accent-amber reveal reveal-delay-1">
+          <div class="ssc-kicker">Current streak</div>
+          <div class="ssc-val">14</div>
+          <div class="ssc-label">Day streak</div>
+          <div class="ssc-sub">consecutive study days</div>
+        </div>
+        <div class="stat-showcase-card accent-sky reveal reveal-delay-2">
+          <div class="ssc-kicker">All sessions</div>
+          <div class="ssc-val">128</div>
+          <div class="ssc-label">Total sessions</div>
+          <div class="ssc-sub">tracked all time</div>
+        </div>
+        <div class="stat-showcase-card accent-sage reveal reveal-delay-3">
+          <div class="ssc-kicker">Minutes banked</div>
+          <div class="ssc-val">3,200</div>
+          <div class="ssc-label">Minutes focused</div>
+          <div class="ssc-sub">about 53 hours of deep work</div>
+        </div>
+        <div class="stat-showcase-card accent-rose reveal reveal-delay-4">
+          <div class="ssc-kicker">Completion</div>
+          <div class="ssc-val">84%</div>
+          <div class="ssc-label">Success rate</div>
+          <div class="ssc-sub">sessions completed</div>
+        </div>
+      </div>
+
+      <div class="insight-panel reveal reveal-delay-2">
+        <div class="insight-copy">
+          <div class="section-label">Weekly Focus</div>
+          <h3>Momentum looks better when you can see it.</h3>
+          <p>Track how your energy moves through the week, spot your strongest sessions, and tighten the gaps before they become lost days.</p>
+        </div>
+        <div class="insight-bars animate-on-view">
+          <div class="insight-bar"><span style="--fill: 72%;"></span><label>Mon</label></div>
+          <div class="insight-bar"><span style="--fill: 91%;"></span><label>Tue</label></div>
+          <div class="insight-bar"><span style="--fill: 64%;"></span><label>Wed</label></div>
+          <div class="insight-bar"><span style="--fill: 88%;"></span><label>Thu</label></div>
+          <div class="insight-bar"><span style="--fill: 79%;"></span><label>Fri</label></div>
+          <div class="insight-bar"><span style="--fill: 58%;"></span><label>Sat</label></div>
+          <div class="insight-bar"><span style="--fill: 83%;"></span><label>Sun</label></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="how" class="section-shell">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Getting Started</div>
+        <h2 class="section-heading">Four steps to your <em>best</em> study session</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal reveal-delay-1">
+          <div class="step-num">1</div>
+          <div class="step-title">Create Your Account</div>
+          <p class="step-desc">Register in seconds and land on a dashboard that is ready to guide your first focused block.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-num">2</div>
+          <div class="step-title">Set Your Session</div>
+          <p class="step-desc">Pick a duration, choose a subject, and let the timer turn intention into a start line.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-3">
+          <div class="step-num">3</div>
+          <div class="step-title">Stay Consistent</div>
+          <p class="step-desc">Keep your streak moving with visible proof of every day you show up for the work.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-4">
+          <div class="step-num">4</div>
+          <div class="step-title">Review and Improve</div>
+          <p class="step-desc">Use your dashboard, history, and AI support to sharpen what comes next.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="testimonials" class="section-shell section-muted">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Student Stories</div>
+        <h2 class="section-heading">What learners are <em>saying</em></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card reveal reveal-delay-1">
+          <p class="testi-quote">FortiFocus completely changed how I study. The streak feature alone pushed me from a few random sessions a week to a real daily routine.</p>
+          <div class="testi-author">
+            <div class="testi-avatar testi-avatar-sage">MR</div>
+            <div>
+              <div class="testi-name">Maya R.</div>
+              <div class="testi-role">Pre-Med Student</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <p class="testi-quote">SEMAJ AI is actually useful. It gives me specific study strategies when I stall instead of generic productivity filler.</p>
+          <div class="testi-author">
+            <div class="testi-avatar testi-avatar-sky">JT</div>
+            <div>
+              <div class="testi-name">James T.</div>
+              <div class="testi-role">CS Sophomore</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-3">
+          <p class="testi-quote">The session log makes my progress feel real. It is clean, easy to scan, and motivating without being noisy.</p>
+          <div class="testi-author">
+            <div class="testi-avatar testi-avatar-amber">AC</div>
+            <div>
+              <div class="testi-name">Aisha C.</div>
+              <div class="testi-role">Law Student</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="section-shell cta-wrap">
+    <div class="container">
+      <div class="cta-section reveal">
+        <div class="section-label cta-label">Start Today</div>
+        <h2>Ready to <em>fortify</em> your focus?</h2>
+        <p>Join students already using FortiFocus to study smarter with less friction and better follow-through.</p>
+        <div class="cta-actions">
+          <a href="index.html" class="btn-hero btn-hero-primary">Create Free Account &rarr;</a>
+        </div>
+        <div class="cta-badges">
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> No credit card</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> Free forever</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> AI included</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> Instant access</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">Forti<em>Focus</em></div>
+  <div class="footer-copy">&copy; 2026 FortiFocus. Built for learners.</div>
+  <div class="footer-links">
+    <a href="index.html">App</a>
+    <a href="index.html">Register</a>
+  </div>
+</footer>
+
+<script src="fortifocus.js"></script>
+</body>
+</html>
