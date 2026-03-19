@@ -1531,6 +1531,38 @@ nav,
   color: var(--ink);
 }
 
+.cta-routine {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.cta-routine-label {
+  margin-bottom: 0.8rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+}
+
+.cta-routine-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.cta-routine-step {
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(var(--paper-rgb), 0.32);
+  color: var(--ink-2);
+  font-size: 0.82rem;
+}
+
 .cta-badges {
   position: relative;
   z-index: 1;
@@ -1803,6 +1835,10 @@ nav,
   .feature-band,
   .cta-glance-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cta-routine-steps {
+    justify-content: center;
   }
 
   .feature-card.big {
