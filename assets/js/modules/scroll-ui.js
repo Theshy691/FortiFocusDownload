@@ -1,4 +1,4 @@
-export function initScrollUI({ siteNav, pageProgress }) {
+function initScrollUI({ siteNav, pageProgress }) {
   const updateScrollUI = () => {
     const scrollTop = window.scrollY;
     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;

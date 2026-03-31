@@ -1,22 +1,31 @@
-import {
-  heroStats,
-  pageProgress,
-  revealObserverTargets,
-  root,
-  siteNav,
-  themeBtn,
-  themeBtnLabel,
-} from "./dom.js";
-import { cycleDurations } from "./durations.js";
-import { initHeroStats } from "./hero-stats.js";
-import { initReveal } from "./reveal.js";
-import { initScrollUI } from "./scroll-ui.js";
-import { buildStreakGrid } from "./streak-grid.js";
-import { initTheme } from "./theme.js";
+const root = document.documentElement;
+const themeBtn = document.getElementById("themeBtn");
+const themeBtnLabel = document.getElementById("themeBtnLabel");
+const siteNav = document.getElementById("siteNav");
+const pageProgress = document.getElementById("pageProgress");
+const heroStats = document.querySelector(".hero-stats");
+const revealObserverTargets = document.querySelectorAll(".reveal, .animate-on-view");
 
-initTheme({ root, themeBtn, themeBtnLabel });
-initReveal(revealObserverTargets);
-initHeroStats(heroStats);
-buildStreakGrid();
-cycleDurations();
-initScrollUI({ siteNav, pageProgress });
+if (typeof initTheme === "function") {
+  initTheme({ root, themeBtn, themeBtnLabel });
+}
+
+if (typeof initReveal === "function") {
+  initReveal(revealObserverTargets);
+}
+
+if (typeof initHeroStats === "function") {
+  initHeroStats(heroStats);
+}
+
+if (typeof buildStreakGrid === "function") {
+  buildStreakGrid();
+}
+
+if (typeof cycleDurations === "function") {
+  cycleDurations();
+}
+
+if (typeof initScrollUI === "function") {
+  initScrollUI({ siteNav, pageProgress });
+}

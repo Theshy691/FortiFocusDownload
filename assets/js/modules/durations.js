@@ -1,4 +1,4 @@
-export function cycleDurations() {
+function cycleDurations() {
   const durationGroups = document.querySelectorAll(".dur-pills");
 
   durationGroups.forEach((group) => {

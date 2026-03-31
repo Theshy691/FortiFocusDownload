@@ -13,7 +13,8 @@ function updateThemeButton(theme, themeBtn, themeBtnLabel) {
     return;
   }
 
-  themeBtnLabel.textContent = theme === "dark" ? "Dark" : "Light";
+  themeBtn.dataset.themeState = theme;
+  themeBtnLabel.textContent = theme === "dark" ? "Dark mode" : "Light mode";
   themeBtn.setAttribute(
     "aria-label",
     theme === "dark" ? "Switch to light mode" : "Switch to dark mode",
@@ -25,7 +26,7 @@ function applyTheme(theme, root, themeBtn, themeBtnLabel) {
   updateThemeButton(theme, themeBtn, themeBtnLabel);
 }
 
-export function initTheme({ root, themeBtn, themeBtnLabel }) {
+function initTheme({ root, themeBtn, themeBtnLabel }) {
   const applyCurrentTheme = (theme) => applyTheme(theme, root, themeBtn, themeBtnLabel);
 
   applyCurrentTheme(getPreferredTheme());

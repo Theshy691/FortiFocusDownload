@@ -1,4 +1,4 @@
-export function initReveal(revealObserverTargets) {
+function initReveal(revealObserverTargets) {
   if (!revealObserverTargets.length) {
     return;
   }

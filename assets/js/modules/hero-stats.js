@@ -22,7 +22,7 @@ function animateCount(element, target, suffix = "", duration = 1800) {
   requestAnimationFrame(step);
 }
 
-export function initHeroStats(heroStats) {
+function initHeroStats(heroStats) {
   if (!heroStats) {
     return;
   }

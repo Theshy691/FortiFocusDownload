@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FortiFocus - Desktop Study System</title>
+<title>FortiFocus - Study Smarter and Stay Consistent</title>
+<meta name="description" content="FortiFocus helps students start faster, stay focused, and build consistent study habits with a timer, planner, streak tracker, reflections, and progress reports in one desktop app.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="fortifocus.css">
+<link rel="stylesheet" href="assets/css/modules/landing-page.css">
 </head>
 <body>
 <div class="page-progress" id="pageProgress"></div>
@@ -13,13 +14,19 @@
 <nav class="site-nav" id="siteNav">
   <a class="nav-brand" href="#">Forti<em>Focus</em></a>
   <div class="nav-links">
-    <a href="#features">Features</a>
-    <a href="#experience">Experience</a>
-    <a href="#how">Workflow</a>
-    <a href="#admin">Admin</a>
+    <a href="#features">Benefits</a>
+    <a href="#experience">Demo</a>
+    <a href="#how">How It Works</a>
+    <a href="#admin">Reporting</a>
   </div>
   <div class="nav-actions">
-    <a href="#experience" class="btn-nav btn-primary-nav">View Product Tour</a>
+    <button class="theme-toggle-nav" id="themeBtn" type="button" aria-label="Switch to dark mode">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-text" id="themeBtnLabel">Light mode</span>
+    </button>
+    <a href="#experience" class="btn-nav btn-primary-nav">See The Demo</a>
   </div>
 </nav>
 
@@ -29,45 +36,45 @@
       <div class="hero-copy">
         <div class="hero-eyebrow">
           <div class="eyebrow-dot"></div>
-          Desktop Study System - Feature Complete
+          Built for students who want follow-through
         </div>
         <h1>
-          One study app for <em>focus</em>, planning, streaks, and <span class="accent-word">oversight</span>
+          Turn study time into <em>real focus</em>, visible progress, and <span class="accent-word">better habits</span>
         </h1>
         <p class="hero-sub">
-          FortiFocus now reflects the full Java desktop app: secure sign in, a guided dashboard, full-screen focus mode, queue planning, history reflections, streak calendars, exports, and a separate admin command center.
+          FortiFocus brings your timer, daily plan, streaks, reflections, and progress reports into one calm desktop experience, so it feels easier to start, easier to stay consistent, and easier to see that your effort is working.
         </p>
         <div class="hero-cta">
-          <a href="#features" class="btn-hero btn-hero-primary">Explore All Features &rarr;</a>
-          <a href="#experience" class="btn-hero btn-hero-ghost">See The App Flow</a>
+          <a href="#features" class="btn-hero btn-hero-primary">See Why It Works &rarr;</a>
+          <a href="#experience" class="btn-hero btn-hero-ghost">Take The Product Tour</a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
             <div class="hero-stat-val sage">7+</div>
-            <div class="hero-stat-label">Core App Views</div>
+            <div class="hero-stat-label">Core Study Tools</div>
           </div>
           <div class="stat-divider"></div>
           <div class="hero-stat">
             <div class="hero-stat-val amber">60</div>
-            <div class="hero-stat-label">Day Streak Window</div>
+            <div class="hero-stat-label">Day Momentum View</div>
           </div>
           <div class="stat-divider"></div>
           <div class="hero-stat">
             <div class="hero-stat-val sky">3</div>
-            <div class="hero-stat-label">Planner Queue Slots</div>
+            <div class="hero-stat-label">Next Tasks Visible</div>
           </div>
           <div class="stat-divider"></div>
           <div class="hero-stat">
             <div class="hero-stat-val rose">2</div>
-            <div class="hero-stat-label">Export Paths</div>
+            <div class="hero-stat-label">Report Export Paths</div>
           </div>
         </div>
         <div class="trust-strip reveal reveal-delay-3">
-          <span class="trust-label">Now built around the real app workflow</span>
+          <span class="trust-label">Designed around the study loop that actually sticks</span>
           <div class="trust-items">
-            <span>Login + registration</span>
-            <span>Timer + planner</span>
-            <span>Insights + admin</span>
+            <span>Plan your day</span>
+            <span>Focus deeply</span>
+            <span>Review and repeat</span>
           </div>
         </div>
       </div>
@@ -78,8 +85,8 @@
 
         <article class="focus-board animate-on-view">
           <div class="board-top">
-            <div class="board-chip board-chip-live">Live Product Tour</div>
-            <div class="board-pill">Timer + Planner + Analytics</div>
+            <div class="board-chip board-chip-live">Live Focus Session</div>
+            <div class="board-pill">Plan -> Focus -> Review</div>
           </div>
           <div class="board-main">
             <div class="board-ring">
@@ -96,14 +103,14 @@
             <div class="board-side">
               <div class="mini-metric">
                 <div class="mini-metric-top">
-                  <span>Focus score</span>
+                  <span>Consistency score</span>
                   <strong>91%</strong>
                 </div>
                 <div class="fill-bar"><span style="--fill: 91%;"></span></div>
               </div>
               <div class="mini-metric">
                 <div class="mini-metric-top">
-                  <span>Weekly goal</span>
+                  <span>This week</span>
                   <strong>640 / 800m</strong>
                 </div>
                 <div class="fill-bar amber-fill"><span style="--fill: 80%;"></span></div>
@@ -138,17 +145,17 @@
         </article>
 
         <div class="floating-card floating-card-one">
-          <div class="floating-kicker">Auth</div>
-          <strong>Login, register, and admin access.</strong>
-          <span>Password visibility and validation are built in.</span>
+          <div class="floating-kicker">Start faster</div>
+          <strong>Clear login, clean setup, and a visible next step.</strong>
+          <span>Less friction before the session even begins.</span>
         </div>
         <div class="floating-card floating-card-two">
-          <div class="floating-kicker">Insights</div>
-          <strong>Next best action, reminders, and trends.</strong>
+          <div class="floating-kicker">Stay consistent</div>
+          <strong>Streaks, reminders, and planning keep momentum alive.</strong>
         </div>
         <div class="floating-card floating-card-three">
-          <div class="floating-kicker">Exports</div>
-          <strong>Study reports and all-sessions CSV.</strong>
+          <div class="floating-kicker">See proof</div>
+          <strong>Progress reports show your work is adding up.</strong>
         </div>
       </div>
     </div>
@@ -161,26 +168,60 @@
 
   <div class="section-divider"></div>
 
+  <section class="section-shell quick-proof-shell">
+    <div class="container">
+      <div class="quick-proof reveal reveal-delay-1">
+        <div class="quick-proof-copy">
+          <div class="section-label">Why It Feels Different</div>
+          <h2 class="section-heading">Less friction at the start. More <em>follow-through</em> at the end.</h2>
+          <p class="section-sub">Most students do not need more motivation. They need a clearer starting point, fewer moving parts, and visible proof that their effort is working. FortiFocus is built around exactly that.</p>
+        </div>
+
+        <div class="quick-proof-grid">
+          <article class="quick-proof-card">
+            <span class="quick-proof-kicker">Before</span>
+            <h3>Study tools feel scattered</h3>
+            <p>Timer in one app, tasks in another, notes somewhere else, and progress hidden until it is too late.</p>
+          </article>
+
+          <article class="quick-proof-card accent">
+            <span class="quick-proof-kicker">After</span>
+            <h3>One calm study system</h3>
+            <p>Plan the next task, run a session, review what happened, and keep momentum alive without leaving the workflow.</p>
+          </article>
+
+          <article class="quick-proof-card">
+            <span class="quick-proof-kicker">Result</span>
+            <h3>Effort becomes visible</h3>
+            <p>Streaks, history, goals, and reports turn study time into something you can actually see improving.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <section id="features" class="section-shell">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">Full Product Surface</div>
-        <h2 class="section-heading">Every major function from the <em>desktop app</em></h2>
-        <p class="section-sub">The landing page now shows the complete FortiFocus workflow instead of only the timer and streak pieces. These sections mirror the Java app modules and the data they manage.</p>
+        <div class="section-label">Why Students Stick With It</div>
+        <h2 class="section-heading">Everything you need to <em>start faster</em>, focus longer, and come back tomorrow</h2>
+        <p class="section-sub">FortiFocus is built to reduce study friction. Instead of juggling timers, notes, planners, and spreadsheets, you get one system that helps you begin, keep going, and see your progress clearly.</p>
       </div>
 
       <div class="feature-band reveal visible reveal-delay-1">
-        <div class="feature-band-card"><span>Auth ready</span><strong>Login, registration, password validation, theme toggle, and admin entry</strong></div>
-        <div class="feature-band-card"><span>Smarter sessions</span><strong>Recommendations, reminders, queue planning, and reflection tracking</strong></div>
-        <div class="feature-band-card"><span>Admin ready</span><strong>KPIs, user filters, session logs, struggling users, and CSV export</strong></div>
+        <div class="feature-band-card"><span>Start without friction</span><strong>Quick access, clear priorities, and a focused setup before you begin.</strong></div>
+        <div class="feature-band-card"><span>Stay in motion</span><strong>Queue planning, streak protection, reminders, and reflection prompts keep you moving.</strong></div>
+        <div class="feature-band-card"><span>See proof fast</span><strong>Goals, session history, momentum views, and reports make progress visible.</strong></div>
       </div>
 
       <div class="features-layout">
         <div class="feature-card big sage reveal visible reveal-delay-1">
           <div>
             <div class="feature-icon icon-sage">TMR</div>
-            <div class="feature-title">Deep Focus Timer + Focus Mode</div>
-            <p class="feature-desc">Run preset or custom study blocks, switch into a distraction-light focus mode, pause or resume without losing progress, stop early when needed, and automatically log completed or interrupted sessions.</p>
+            <div class="feature-title">A focus timer that makes starting easier</div>
+            <p class="feature-desc">Choose a session length, enter focus mode, and keep your attention anchored with a clean timer, calm visuals, music presets, and simple controls that help you stay with the work.</p>
             <div class="tag-row">
               <span class="tag-pill tag-sage">15m to custom lengths</span>
               <span class="tag-pill tag-sage">Pause / resume / stop</span>
@@ -218,8 +259,8 @@
         <div class="feature-card amber reveal visible reveal-delay-2">
           <div>
             <div class="feature-icon icon-amber">PLN</div>
-            <div class="feature-title">Study Queue Planner</div>
-            <p class="feature-desc">Manage your next tasks with subject, start time, estimated minutes, due date, and priority. FortiFocus can surface the next best task and flag urgent work before your streak slips.</p>
+            <div class="feature-title">A planner that tells you what to do next</div>
+            <p class="feature-desc">Line up your next few tasks with time, duration, and priority so you spend less energy deciding what to do and more energy actually getting started.</p>
           </div>
           <div class="planner-preview">
             <div class="planner-row"><strong>Integrals review</strong><span class="priority-pill priority-high">High</span></div>
@@ -234,8 +275,8 @@
         <div class="feature-card sky reveal visible reveal-delay-3">
           <div>
             <div class="feature-icon icon-sky">DBD</div>
-            <div class="feature-title">Smart Dashboard</div>
-            <p class="feature-desc">Your dashboard combines today's plan, weekly goal tracking, subject breakdowns, productivity trends, next best actions, reminders, daily prompts, recent sessions, and exportable study reports.</p>
+            <div class="feature-title">A dashboard that turns effort into motivation</div>
+            <p class="feature-desc">See today's target, weekly momentum, next best action, reminders, and recent progress in one glance so you always know where to focus next.</p>
           </div>
           <div class="dashboard-mini animate-on-view is-live">
             <div class="mini-metric">
@@ -262,8 +303,8 @@
         <div class="feature-card rose reveal visible reveal-delay-4">
           <div>
             <div class="feature-icon icon-rose">HIS</div>
-            <div class="feature-title">History + Reflection Notes</div>
-            <p class="feature-desc">Every session can carry notes, blockers, and a next step so the history page becomes more than a log. You can reopen old sessions, update reflections, and remove entries when needed.</p>
+            <div class="feature-title">Session history that helps you improve</div>
+            <p class="feature-desc">Review what worked, capture blockers, and leave yourself a next step so each session makes the next one easier to begin and easier to finish well.</p>
           </div>
           <div>
             <div class="history-stack">
@@ -287,8 +328,8 @@
         <div class="feature-card amber reveal visible reveal-delay-1">
           <div>
             <div class="feature-icon icon-amber">STK</div>
-            <div class="feature-title">Streak Tracker + Calendar View</div>
-            <p class="feature-desc">The app tracks current streak, best streak, active days, a 60 day momentum board, and a full monthly calendar that marks completed, missed, open, and current days.</p>
+            <div class="feature-title">Streaks that make consistency visible</div>
+            <p class="feature-desc">Watch your momentum build across the streak board and calendar so showing up feels tangible, gaps stand out early, and staying consistent gets easier.</p>
           </div>
           <div>
             <div class="streak-showcase" aria-hidden="true">
@@ -317,8 +358,8 @@
         <div class="feature-card sage reveal visible reveal-delay-2" id="admin">
           <div>
             <div class="feature-icon icon-sage">ADM</div>
-            <div class="feature-title">Secure Auth + Admin Command Center</div>
-            <p class="feature-desc">Users can sign in or register with validation rules, toggle password visibility, and switch themes. Admins authenticate separately, review KPIs, inspect users and sessions, filter activity, and export the full log as CSV.</p>
+            <div class="feature-title">Reporting when you need visibility</div>
+            <p class="feature-desc">FortiFocus stays simple for students, but it also includes clean admin access, KPI review, filters, and exports for tutors, teams, or anyone who needs progress visibility.</p>
           </div>
           <div class="auth-admin-preview">
             <div class="auth-mini">
@@ -351,9 +392,9 @@
   <section id="experience" class="section-shell section-muted">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">Inside The App</div>
-        <h2 class="section-heading">A guided tour of each <em>screen</em></h2>
-        <p class="section-sub">This explorer maps the landing page directly to the Java UI: authentication, dashboard, timer, history, streaks, and admin. Switch tabs to see what each area is responsible for.</p>
+        <div class="section-label">See The Flow</div>
+        <h2 class="section-heading">From planning to payoff in one <em>guided experience</em></h2>
+        <p class="section-sub">FortiFocus replaces scattered study tools with one calm workflow that helps students plan, focus, review, and keep momentum going.</p>
       </div>
 
       <div class="tour-shell no-js-tour reveal visible reveal-delay-1">
@@ -361,8 +402,8 @@
           <article class="tour-panel active">
             <div class="tour-copy">
               <div class="section-label">Authentication</div>
-              <h3>Sign in, register, validate, and route admins separately.</h3>
-              <p>FortiFocus supports user login, account creation, email validation, password rules, show or hide password controls, theme switching, and a dedicated admin authentication overlay.</p>
+              <h3>Get in quickly and start with a clear next step.</h3>
+              <p>Simple login and registration keep friction low, while separate admin access keeps oversight clean without complicating the student experience.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">Login + register</span>
                 <span class="tag-pill tag-sage">Password visibility</span>
@@ -386,8 +427,8 @@
           <article class="tour-panel active">
             <div class="tour-copy">
               <div class="section-label">Dashboard</div>
-              <h3>The app shows what to do next, not just what already happened.</h3>
-              <p>The dashboard merges streak progress, today's target, weekly goals, daily prompts, reminders, subject charts, trend charts, achievements, recent sessions, and report export.</p>
+              <h3>Know what matters before you lose momentum.</h3>
+              <p>The dashboard surfaces today's target, weekly progress, reminders, recommendations, and recent wins so you're never guessing where to focus next.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">Today plan</span>
                 <span class="tag-pill tag-sage">Trend charts</span>
@@ -411,8 +452,8 @@
           <article class="tour-panel active">
             <div class="tour-copy">
               <div class="section-label">Timer</div>
-              <h3>Run a full focus session with planner context around it.</h3>
-              <p>The timer page handles subject input, duration presets, custom durations, study music presets, progress rings, pause or resume, full-screen focus mode, completion metrics, and queue syncing.</p>
+              <h3>Focus without second-guessing yourself.</h3>
+              <p>Start a timed session fast, use presets or custom lengths, and keep distractions low while the app tracks progress and keeps your plan in view.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">Custom durations</span>
                 <span class="tag-pill tag-sage">Music presets</span>
@@ -436,8 +477,8 @@
           <article class="tour-panel active">
             <div class="tour-copy">
               <div class="section-label">History</div>
-              <h3>Session history becomes a reflection workspace.</h3>
-              <p>The history page keeps every session visible, marks whether reflections are saved, and lets users capture notes, blockers, and the next step for each entry without losing the original timeline.</p>
+              <h3>Review sessions so tomorrow gets easier.</h3>
+              <p>Notes, blockers, and next steps turn your session history into a feedback loop instead of a forgotten log.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">Notes</span>
                 <span class="tag-pill tag-sage">Blockers</span>
@@ -461,8 +502,8 @@
           <article class="tour-panel active">
             <div class="tour-copy">
               <div class="section-label">Streaks</div>
-              <h3>Momentum is visible across both the streak board and the month view.</h3>
-              <p>The streak page tracks current streak, best streak, active days, a 60 day flame board, and a full calendar that distinguishes studied, missed, open, and today states with tooltips and reveal animation.</p>
+              <h3>Make consistency visible enough to protect.</h3>
+              <p>The streak board and calendar make momentum feel real, help you spot gaps early, and turn daily study into something you can see building.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">60 day board</span>
                 <span class="tag-pill tag-sage">Monthly calendar</span>
@@ -486,8 +527,8 @@
           <article class="tour-panel active">
             <div class="tour-copy">
               <div class="section-label">Admin</div>
-              <h3>Separate oversight tools for users, sessions, and engagement.</h3>
-              <p>The admin dashboard keeps user analytics separate from the student view with KPIs, struggling-user panels, subject charts, engagement trends, searchable user tables, session logs, and CSV export.</p>
+              <h3>Keep reporting simple when others need visibility.</h3>
+              <p>Admins can review activity, track engagement, and export records without turning the student flow into something cluttered or heavy.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">User management</span>
                 <span class="tag-pill tag-sage">Session filtering</span>
@@ -517,43 +558,43 @@
   <section id="stats" class="section-shell">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">What The App Tracks</div>
-        <h2 class="section-heading">Signals that turn effort into <em>feedback</em></h2>
-        <p class="section-sub">FortiFocus does more than count sessions. It turns your data into planning, recommendations, reminders, achievements, and visibility for both students and admins.</p>
+        <div class="section-label">Why It Works</div>
+        <h2 class="section-heading">The system turns good intentions into <em>visible progress</em></h2>
+        <p class="section-sub">FortiFocus combines clarity, structure, and feedback so it becomes easier to keep showing up, even on the days when motivation is low.</p>
       </div>
 
       <div class="stats-showcase">
         <div class="stat-showcase-card accent-amber reveal visible reveal-delay-1">
-          <div class="ssc-kicker">Planning</div>
+          <div class="ssc-kicker">Clarity</div>
           <div class="ssc-val">Today</div>
-          <div class="ssc-label">Target and remaining minutes</div>
-          <div class="ssc-sub">plus the next queue task to tackle</div>
+          <div class="ssc-label">Know what to do next</div>
+          <div class="ssc-sub">instead of wasting energy deciding</div>
         </div>
         <div class="stat-showcase-card accent-sky reveal visible reveal-delay-2">
-          <div class="ssc-kicker">Learning</div>
+          <div class="ssc-kicker">Momentum</div>
           <div class="ssc-val">Best</div>
-          <div class="ssc-label">Recommended session length</div>
-          <div class="ssc-sub">based on your own completion history</div>
+          <div class="ssc-label">Learn your ideal session length</div>
+          <div class="ssc-sub">from the sessions you actually finish</div>
         </div>
         <div class="stat-showcase-card accent-sage reveal visible reveal-delay-3">
-          <div class="ssc-kicker">Insight</div>
+          <div class="ssc-kicker">Feedback</div>
           <div class="ssc-val">Top 5</div>
-          <div class="ssc-label">Subject breakdown and trends</div>
-          <div class="ssc-sub">to show where focus is really going</div>
+          <div class="ssc-label">See where your effort is going</div>
+          <div class="ssc-sub">through subjects, trends, and recent results</div>
         </div>
         <div class="stat-showcase-card accent-rose reveal visible reveal-delay-4">
-          <div class="ssc-kicker">Milestones</div>
+          <div class="ssc-kicker">Consistency</div>
           <div class="ssc-val">4</div>
-          <div class="ssc-label">Achievement paths</div>
-          <div class="ssc-sub">streaks, hours, sessions, and active days</div>
+          <div class="ssc-label">Multiple progress signals</div>
+          <div class="ssc-sub">goals, streaks, sessions, and active days</div>
         </div>
       </div>
 
       <div class="insight-panel reveal reveal-delay-2">
         <div class="insight-copy">
-          <div class="section-label">Admin Visibility</div>
-          <h3>Student progress and system health can be reviewed in one place.</h3>
-          <p>Admins can monitor engagement, see which users are inactive or repeatedly interrupted, filter the global session log, and export activity for reporting.</p>
+          <div class="section-label">Visibility</div>
+          <h3>Students get motivation. Teams get clean reporting.</h3>
+          <p>The same system that helps students stay on track also makes progress easy to review, filter, and export when visibility matters.</p>
         </div>
         <div class="insight-bars animate-on-view is-live">
           <div class="insight-bar"><span style="--fill: 92%;"></span><label>Users</label></div>
@@ -573,17 +614,17 @@
   <section id="how" class="section-shell section-muted">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">Workflow</div>
-        <h2 class="section-heading">How the full FortiFocus system <em>works</em></h2>
+        <div class="section-label">How It Works</div>
+        <h2 class="section-heading">A study routine you can actually <em>stick with</em></h2>
       </div>
 
       <div class="steps-grid">
-        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">1</div><div class="step-title">Create or Reopen Your Account</div><p class="step-desc">Start with the authentication flow, validate your details, and route admins through their own secure entry.</p></div>
-        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">2</div><div class="step-title">Set Goals and Queue Tasks</div><p class="step-desc">Define a weekly goal, line up your next tasks, and give each one time, duration, due date, and priority.</p></div>
-        <div class="step-card reveal visible reveal-delay-3"><div class="step-num">3</div><div class="step-title">Start a Guided Focus Session</div><p class="step-desc">Choose a preset or custom duration, select study music, and move into the timer or full-screen focus mode.</p></div>
-        <div class="step-card reveal visible reveal-delay-4"><div class="step-num">4</div><div class="step-title">Log the Outcome Automatically</div><p class="step-desc">Completed and interrupted sessions are stored with subject, planned time, actual time, and timestamps.</p></div>
-        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">5</div><div class="step-title">Review Reflections and Streaks</div><p class="step-desc">Add notes, blockers, and next steps, then check the streak board and monthly calendar to protect momentum.</p></div>
-        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">6</div><div class="step-title">Export or Administer</div><p class="step-desc">Generate a study report for one user or export all sessions to CSV from the admin dashboard.</p></div>
+        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">1</div><div class="step-title">Open FortiFocus</div><p class="step-desc">Start in a clean space that makes it obvious what matters today.</p></div>
+        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">2</div><div class="step-title">Choose Your Priorities</div><p class="step-desc">Line up the next few tasks so your brain does less deciding and more doing.</p></div>
+        <div class="step-card reveal visible reveal-delay-3"><div class="step-num">3</div><div class="step-title">Run One Focus Session</div><p class="step-desc">Use a preset or custom timer and let the app keep your attention anchored.</p></div>
+        <div class="step-card reveal visible reveal-delay-4"><div class="step-num">4</div><div class="step-title">Let Progress Log Itself</div><p class="step-desc">Sessions, time, and outcomes are tracked automatically as you go.</p></div>
+        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">5</div><div class="step-title">Review What Helped</div><p class="step-desc">Save notes, blockers, and next steps so tomorrow starts with more clarity.</p></div>
+        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">6</div><div class="step-title">Build Momentum Daily</div><p class="step-desc">Protect your streak, track your growth, and keep the routine moving.</p></div>
       </div>
     </div>
   </section>
@@ -593,22 +634,22 @@
   <section class="section-shell">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">Implementation Highlights</div>
-        <h2 class="section-heading">Built around a <em>real desktop workflow</em></h2>
+        <div class="section-label">What Makes It Feel Better</div>
+        <h2 class="section-heading">Built to feel more <em>focused</em> than a basic study timer</h2>
       </div>
 
       <div class="testimonials-grid">
         <div class="testi-card reveal visible reveal-delay-1">
-          <p class="testi-quote">Local persistence keeps accounts, queue items, goals, sessions, reflections, and theme state together so the app feels continuous instead of disposable.</p>
-          <div class="testi-author"><div class="testi-avatar testi-avatar-sage">DAT</div><div><div class="testi-name">Local Data Flow</div><div class="testi-role">JSON-backed study state</div></div></div>
+          <p class="testi-quote">Instead of jumping between a timer, notes app, planner, and spreadsheet, FortiFocus keeps the full study loop in one place.</p>
+          <div class="testi-author"><div class="testi-avatar testi-avatar-sage">ONE</div><div><div class="testi-name">One focused workflow</div><div class="testi-role">Less tab switching</div></div></div>
         </div>
         <div class="testi-card reveal visible reveal-delay-2">
-          <p class="testi-quote">Separate user and admin experiences make the product usable both for personal study and for oversight, reporting, and activity monitoring.</p>
-          <div class="testi-author"><div class="testi-avatar testi-avatar-sky">ADM</div><div><div class="testi-name">Dual Experience</div><div class="testi-role">Student and admin roles</div></div></div>
+          <p class="testi-quote">The app makes progress visible while you are still in the middle of building it, which is what helps consistency last longer than motivation alone.</p>
+          <div class="testi-author"><div class="testi-avatar testi-avatar-sky">CAL</div><div><div class="testi-name">Visible momentum</div><div class="testi-role">Goals, streaks, and history</div></div></div>
         </div>
         <div class="testi-card reveal visible reveal-delay-3">
-          <p class="testi-quote">The desktop project already includes run scripts and a shareable build flow, so the product story now matches the scope of the app behind it.</p>
-          <div class="testi-author"><div class="testi-avatar testi-avatar-amber">WIN</div><div><div class="testi-name">Desktop Delivery</div><div class="testi-role">Runnable and shareable build path</div></div></div>
+          <p class="testi-quote">When someone else needs visibility, reports and exports are already there without turning the student experience into something cluttered.</p>
+          <div class="testi-author"><div class="testi-avatar testi-avatar-amber">REP</div><div><div class="testi-name">Ready for reporting</div><div class="testi-role">Admin and export tools</div></div></div>
         </div>
       </div>
     </div>
@@ -619,32 +660,34 @@
   <section class="section-shell cta-wrap">
     <div class="container">
       <div class="cta-section reveal">
-        <div class="section-label cta-label">FORTIFIED</div>
-        <h2>Ready to show the <em>full FortiFocus</em> story?</h2>
-        <p>This landing page now communicates the actual product surface: authentication, planning, focus sessions, reflections, streaks, exports, and admin oversight in one flow.</p>
+        <div class="section-label cta-label">READY TO FOCUS</div>
+        <h2>Give your study routine a system that actually <em>keeps you moving</em></h2>
+        <p>FortiFocus helps students start faster, stay consistent, and see real progress in one calm desktop experience.</p>
+        <div class="cta-actions">
+          <a href="#experience" class="btn-hero btn-hero-primary">Explore The Demo</a>
+          <a href="#admin" class="btn-hero btn-hero-ghost">See Reporting View</a>
+        </div>
         <div class="cta-glance">
-          <div class="cta-glance-title">What visitors can understand now</div>
+          <div class="cta-glance-title">What should feel obvious right away</div>
           <div class="cta-glance-grid">
-            <div class="cta-glance-card"><span>Student flow</span><strong>Sign in, plan the day, run a timer, review reflections, and keep the streak alive.</strong></div>
-            <div class="cta-glance-card"><span>Smart coaching</span><strong>Recommendations, reminders, insights, achievements, and trend summaries all come from tracked sessions.</strong></div>
-            <div class="cta-glance-card"><span>Admin flow</span><strong>Separate authentication, KPI monitoring, user management, filtering, and CSV export support the oversight side.</strong></div>
+            <div class="cta-glance-card"><span>Start fast</span><strong>Get from login to your first focused session without extra friction.</strong></div>
+            <div class="cta-glance-card"><span>Stay focused</span><strong>Use one clear system for planning, timing, streaks, and reflection.</strong></div>
+            <div class="cta-glance-card"><span>See progress</span><strong>Watch goals, history, and reports turn effort into visible proof.</strong></div>
           </div>
           <div class="cta-routine">
             <div class="cta-routine-label">Core loop</div>
             <div class="cta-routine-steps">
-              <div class="cta-routine-step">Authenticate</div>
-              <div class="cta-routine-step">Plan the queue</div>
-              <div class="cta-routine-step">Run focus mode</div>
-              <div class="cta-routine-step">Review history</div>
-              <div class="cta-routine-step">Track streaks</div>
-              <div class="cta-routine-step">Export insights</div>
+              <div class="cta-routine-step">Plan</div>
+              <div class="cta-routine-step">Focus</div>
+              <div class="cta-routine-step">Review</div>
+              <div class="cta-routine-step">Repeat</div>
             </div>
           </div>
         </div>
         <div class="cta-badges">
-          <div class="cta-badge"><div class="badge-check">&#10003;</div> Desktop-first experience</div>
-          <div class="cta-badge"><div class="badge-check">&#10003;</div> Student and admin flows</div>
-          <div class="cta-badge"><div class="badge-check">&#10003;</div> Reports and CSV export</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> Clear daily plan</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> Built for consistency</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> Reports when needed</div>
         </div>
       </div>
     </div>
@@ -653,14 +696,20 @@
 
 <footer class="site-footer">
   <div class="footer-brand">Forti<em>Focus</em></div>
-  <div class="footer-copy">&copy; 2026 FortiFocus. Built for learners and study oversight.</div>
+  <div class="footer-copy">&copy; 2026 FortiFocus. Built to help learners follow through.</div>
   <div class="footer-links">
-    <a href="#features">Features</a>
-    <a href="#experience">Tour</a>
-    <a href="#admin">Admin</a>
+    <a href="#features">Benefits</a>
+    <a href="#experience">Demo</a>
+    <a href="#admin">Reporting</a>
   </div>
 </footer>
 
-<script type="module" src="fortifocus.js"></script>
+<script defer src="assets/js/modules/theme.js"></script>
+<script defer src="assets/js/modules/reveal.js"></script>
+<script defer src="assets/js/modules/hero-stats.js"></script>
+<script defer src="assets/js/modules/streak-grid.js"></script>
+<script defer src="assets/js/modules/durations.js"></script>
+<script defer src="assets/js/modules/scroll-ui.js"></script>
+<script defer src="assets/js/modules/init.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ const activeDays = [
   25, 27, 28, 29, 30, 31, 32, 33, 35, 36, 37, 38, 39, 41,
 ];
 
-export function buildStreakGrid() {
+function buildStreakGrid() {
   const container = document.querySelector(".streak-showcase");
 
   if (!container || container.children.length > 0) {
