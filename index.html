@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FortiFocus - Study Smarter and Stay Consistent</title>
-<meta name="description" content="FortiFocus helps students start faster, stay focused, and build consistent study habits with a timer, planner, streak tracker, reflections, and progress reports in one desktop app.">
+<title>FortiFocus - JavaFX Study App for Focus, Goals, and Progress</title>
+<meta name="description" content="FortiFocus is a JavaFX desktop study app with focus sessions, queue planning, weekly goals, streaks, reflections, TXT reports, and admin CSV exports.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/modules/landing-page.css">
 </head>
@@ -15,8 +15,8 @@
   <a class="nav-brand" href="#">Forti<em>Focus</em></a>
   <div class="nav-links">
     <a href="#features">Benefits</a>
+    <a href="#setup">Setup</a>
     <a href="#experience">Demo</a>
-    <a href="#how">How It Works</a>
     <a href="#admin">Reporting</a>
   </div>
   <div class="nav-actions">
@@ -26,7 +26,7 @@
       </span>
       <span class="theme-toggle-text" id="themeBtnLabel">Light mode</span>
     </button>
-    <a href="#experience" class="btn-nav btn-primary-nav">See The Demo</a>
+    <a href="#setup" class="btn-nav btn-primary-nav">See Setup</a>
   </div>
 </nav>
 
@@ -36,45 +36,45 @@
       <div class="hero-copy">
         <div class="hero-eyebrow">
           <div class="eyebrow-dot"></div>
-          Built for students who want follow-through
+          JavaFX desktop app for students who want follow-through
         </div>
         <h1>
-          Turn study time into <em>real focus</em>, visible progress, and <span class="accent-word">better habits</span>
+          Run your study routine through <em>one desktop flow</em> with smart sessions, carryover tasks, and <span class="accent-word">visible progress</span>
         </h1>
         <p class="hero-sub">
-          FortiFocus brings your timer, daily plan, streaks, reflections, and progress reports into one calm desktop experience, so it feels easier to start, easier to stay consistent, and easier to see that your effort is working.
+          FortiFocus now brings your focus timer, queue, weekly goal, fortress progress, streaks, reflections, TXT reports, and admin CSV exports into one local JavaFX desktop app, so it is easier to launch, easier to keep moving, and easier to review what is working.
         </p>
         <div class="hero-cta">
-          <a href="#features" class="btn-hero btn-hero-primary">See Why It Works &rarr;</a>
-          <a href="#experience" class="btn-hero btn-hero-ghost">Take The Product Tour</a>
+          <a href="#features" class="btn-hero btn-hero-primary">See The Desktop Flow &rarr;</a>
+          <a href="#setup" class="btn-hero btn-hero-ghost">View Setup + Build Notes</a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
-            <div class="hero-stat-val sage">7+</div>
-            <div class="hero-stat-label">Core Study Tools</div>
+            <div class="hero-stat-val sage">17+</div>
+            <div class="hero-stat-label">Java Release</div>
           </div>
           <div class="stat-divider"></div>
           <div class="hero-stat">
-            <div class="hero-stat-val amber">60</div>
-            <div class="hero-stat-label">Day Momentum View</div>
+            <div class="hero-stat-val amber">6</div>
+            <div class="hero-stat-label">Focus Modes</div>
           </div>
           <div class="stat-divider"></div>
           <div class="hero-stat">
-            <div class="hero-stat-val sky">3</div>
-            <div class="hero-stat-label">Next Tasks Visible</div>
+            <div class="hero-stat-val sky">2</div>
+            <div class="hero-stat-label">Export Paths</div>
           </div>
           <div class="stat-divider"></div>
           <div class="hero-stat">
-            <div class="hero-stat-val rose">2</div>
-            <div class="hero-stat-label">Report Export Paths</div>
+            <div class="hero-stat-val rose">.env</div>
+            <div class="hero-stat-label">Admin Config Ready</div>
           </div>
         </div>
         <div class="trust-strip reveal reveal-delay-3">
-          <span class="trust-label">Designed around the study loop that actually sticks</span>
+          <span class="trust-label">Designed around the real desktop study loop</span>
           <div class="trust-items">
-            <span>Plan your day</span>
-            <span>Focus deeply</span>
-            <span>Review and repeat</span>
+            <span>Launch with Maven</span>
+            <span>Focus locally</span>
+            <span>Export when needed</span>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
         <article class="focus-board animate-on-view">
           <div class="board-top">
             <div class="board-chip board-chip-live">Live Focus Session</div>
-            <div class="board-pill">Plan -> Focus -> Review</div>
+            <div class="board-pill">Queue -> Focus -> Reflect</div>
           </div>
           <div class="board-main">
             <div class="board-ring">
@@ -103,25 +103,25 @@
             <div class="board-side">
               <div class="mini-metric">
                 <div class="mini-metric-top">
-                  <span>Consistency score</span>
-                  <strong>91%</strong>
+                  <span>Fortress charge</span>
+                  <strong>4 / 5</strong>
                 </div>
-                <div class="fill-bar"><span style="--fill: 91%;"></span></div>
+                <div class="fill-bar"><span style="--fill: 80%;"></span></div>
               </div>
               <div class="mini-metric">
                 <div class="mini-metric-top">
-                  <span>This week</span>
+                  <span>Weekly goal</span>
                   <strong>640 / 800m</strong>
                 </div>
                 <div class="fill-bar amber-fill"><span style="--fill: 80%;"></span></div>
               </div>
               <div class="session-stack">
                 <div class="session-stack-head">
-                  <span>Today's Queue</span>
+                  <span>Queue + Carryover</span>
                   <span>3 items</span>
                 </div>
                 <div class="session-item">
-                  <span>Integrals review - High</span>
+                  <span>Carryover intro draft - High</span>
                   <strong>08:30</strong>
                 </div>
                 <div class="session-item">
@@ -145,17 +145,17 @@
         </article>
 
         <div class="floating-card floating-card-one">
-          <div class="floating-kicker">Start faster</div>
-          <strong>Clear login, clean setup, and a visible next step.</strong>
-          <span>Less friction before the session even begins.</span>
+          <div class="floating-kicker">Run locally</div>
+          <strong>Maven launch scripts, JavaFX UI, and a shareable Windows build.</strong>
+          <span>Clear setup whether you run it yourself or send it to a friend.</span>
         </div>
         <div class="floating-card floating-card-two">
-          <div class="floating-kicker">Stay consistent</div>
-          <strong>Streaks, reminders, and planning keep momentum alive.</strong>
+          <div class="floating-kicker">Focus smarter</div>
+          <strong>Recommended durations, focus modes, study music, and recovery prompts keep sessions moving.</strong>
         </div>
         <div class="floating-card floating-card-three">
-          <div class="floating-kicker">See proof</div>
-          <strong>Progress reports show your work is adding up.</strong>
+          <div class="floating-kicker">Carry it forward</div>
+          <strong>Turn reflections into the next queue step instead of starting from zero tomorrow.</strong>
         </div>
       </div>
     </div>
@@ -173,27 +173,27 @@
       <div class="quick-proof reveal reveal-delay-1">
         <div class="quick-proof-copy">
           <div class="section-label">Why It Feels Different</div>
-          <h2 class="section-heading">Less friction at the start. More <em>follow-through</em> at the end.</h2>
-          <p class="section-sub">Most students do not need more motivation. They need a clearer starting point, fewer moving parts, and visible proof that their effort is working. FortiFocus is built around exactly that.</p>
+          <h2 class="section-heading">Less friction at launch. More <em>follow-through</em> after every session.</h2>
+          <p class="section-sub">The current FortiFocus app is built around the real desktop workflow: sign in fast, open the queue, run a recommended block, reflect, and carry the next step forward without rebuilding your plan from scratch.</p>
         </div>
 
         <div class="quick-proof-grid">
           <article class="quick-proof-card">
             <span class="quick-proof-kicker">Before</span>
-            <h3>Study tools feel scattered</h3>
-            <p>Timer in one app, tasks in another, notes somewhere else, and progress hidden until it is too late.</p>
+            <h3>Study setup breaks momentum</h3>
+            <p>Launching tools, deciding what to do, and rebuilding context can drain energy before the first real block starts.</p>
           </article>
 
           <article class="quick-proof-card accent">
             <span class="quick-proof-kicker">After</span>
-            <h3>One calm study system</h3>
-            <p>Plan the next task, run a session, review what happened, and keep momentum alive without leaving the workflow.</p>
+            <h3>One local JavaFX workflow</h3>
+            <p>Queue planning, focus modes, reflections, streaks, and reports now live in the same desktop flow from login to export.</p>
           </article>
 
           <article class="quick-proof-card">
             <span class="quick-proof-kicker">Result</span>
-            <h3>Effort becomes visible</h3>
-            <p>Streaks, history, goals, and reports turn study time into something you can actually see improving.</p>
+            <h3>Progress stays actionable</h3>
+            <p>Weekly goals, fortress progress, carryover tasks, TXT reports, and admin CSV exports make the work easier to continue and easier to review.</p>
           </article>
         </div>
       </div>
@@ -204,33 +204,33 @@
 
   <section id="features" class="section-shell">
     <div class="container">
-      <div class="reveal">
-        <div class="section-label">Why Students Stick With It</div>
-        <h2 class="section-heading">Everything you need to <em>start faster</em>, focus longer, and come back tomorrow</h2>
-        <p class="section-sub">FortiFocus is built to reduce study friction. Instead of juggling timers, notes, planners, and spreadsheets, you get one system that helps you begin, keep going, and see your progress clearly.</p>
+        <div class="reveal">
+          <div class="section-label">Why Students Stick With It</div>
+          <h2 class="section-heading">Everything you need to <em>launch faster</em>, focus longer, and come back with context tomorrow</h2>
+          <p class="section-sub">FortiFocus is now aligned around the real desktop app flow. Instead of juggling timers, notes, planners, and exports across separate tools, you get one system that helps you begin, keep going, and hand off your next step cleanly.</p>
       </div>
 
       <div class="feature-band reveal visible reveal-delay-1">
-        <div class="feature-band-card"><span>Start without friction</span><strong>Quick access, clear priorities, and a focused setup before you begin.</strong></div>
-        <div class="feature-band-card"><span>Stay in motion</span><strong>Queue planning, streak protection, reminders, and reflection prompts keep you moving.</strong></div>
-        <div class="feature-band-card"><span>See proof fast</span><strong>Goals, session history, momentum views, and reports make progress visible.</strong></div>
+        <div class="feature-band-card"><span>Launch cleanly</span><strong>JavaFX auth, theme toggle, Maven run scripts, and clear desktop setup keep the first step simple.</strong></div>
+        <div class="feature-band-card"><span>Stay in motion</span><strong>Queue strategy, session recommendations, fortress progress, and recovery prompts keep momentum alive.</strong></div>
+        <div class="feature-band-card"><span>Review and export</span><strong>Reflections, TXT reports, and admin CSV exports make progress visible without extra tooling.</strong></div>
       </div>
 
       <div class="features-layout">
         <div class="feature-card big sage reveal visible reveal-delay-1">
           <div>
             <div class="feature-icon icon-sage">TMR</div>
-            <div class="feature-title">A focus timer that makes starting easier</div>
-            <p class="feature-desc">Choose a session length, enter focus mode, and keep your attention anchored with a clean timer, calm visuals, music presets, and simple controls that help you stay with the work.</p>
+            <div class="feature-title">A focus timer that adapts to the work you are doing</div>
+            <p class="feature-desc">Choose a recommended or custom session, pick a focus mode, enter focus mode, and keep your attention anchored with music presets, rotating quotes, and interruption tracking when a block stops early.</p>
             <div class="tag-row">
               <span class="tag-pill tag-sage">15m to custom lengths</span>
               <span class="tag-pill tag-sage">Pause / resume / stop</span>
               <span class="tag-pill tag-sage">Auto session logging</span>
             </div>
             <div class="tag-row">
+              <span class="tag-pill tag-sage">6 focus modes</span>
               <span class="tag-pill tag-sage">Study music presets</span>
-              <span class="tag-pill tag-sage">Rotating focus quotes</span>
-              <span class="tag-pill tag-sage">Live completion ring</span>
+              <span class="tag-pill tag-sage">Interruption reasons</span>
             </div>
           </div>
           <div class="timer-preview animate-on-view is-live">
@@ -259,14 +259,14 @@
         <div class="feature-card amber reveal visible reveal-delay-2">
           <div>
             <div class="feature-icon icon-amber">PLN</div>
-            <div class="feature-title">A planner that tells you what to do next</div>
-            <p class="feature-desc">Line up your next few tasks with time, duration, and priority so you spend less energy deciding what to do and more energy actually getting started.</p>
+            <div class="feature-title">A queue that tells you what to do next</div>
+            <p class="feature-desc">Line up your next tasks with time, duration, deadline, and priority, then carry forward the next step from history so tomorrow starts with more clarity and less guessing.</p>
           </div>
           <div class="planner-preview">
-            <div class="planner-row"><strong>Integrals review</strong><span class="priority-pill priority-high">High</span></div>
-            <div class="planner-meta">08:30 - 45m - Due today</div>
+            <div class="planner-row"><strong>Carryover: draft intro</strong><span class="priority-pill priority-high">High</span></div>
+            <div class="planner-meta">08:30 - 25m - Picked up from history</div>
             <div class="planner-row"><strong>Practice set</strong><span class="priority-pill priority-medium">Medium</span></div>
-            <div class="planner-meta">11:00 - 30m - Due tomorrow</div>
+            <div class="planner-meta">11:00 - 30m - Due today</div>
             <div class="planner-row"><strong>Error review</strong><span class="priority-pill priority-low">Low</span></div>
             <div class="planner-meta">12:15 - 20m - Follow-up review</div>
           </div>
@@ -275,52 +275,52 @@
         <div class="feature-card sky reveal visible reveal-delay-3">
           <div>
             <div class="feature-icon icon-sky">DBD</div>
-            <div class="feature-title">A dashboard that turns effort into motivation</div>
-            <p class="feature-desc">See today's target, weekly momentum, next best action, reminders, and recent progress in one glance so you always know where to focus next.</p>
+            <div class="feature-title">A dashboard that turns effort into the next best move</div>
+            <p class="feature-desc">See today's target, weekly goal, fortress charge, recovery plan, reminders, achievements, and recent progress in one glance so the next block is easier to choose.</p>
           </div>
           <div class="dashboard-mini animate-on-view is-live">
             <div class="mini-metric">
               <div class="mini-metric-top"><span>Today plan</span><strong>80 / 120m</strong></div>
               <div class="fill-bar"><span style="--fill: 67%;"></span></div>
             </div>
-            <div class="mini-metric">
-              <div class="mini-metric-top"><span>Weekly goal</span><strong>640 / 800m</strong></div>
-              <div class="fill-bar amber-fill"><span style="--fill: 80%;"></span></div>
-            </div>
-            <div class="history-stack compact-history">
-              <div class="history-item">
-                <div><div class="history-title">Next best action</div><div class="history-time">Open a 25 minute session for Practice Set</div></div>
-                <span class="tag-pill tag-sage">Good</span>
+              <div class="mini-metric">
+                <div class="mini-metric-top"><span>Fortress</span><strong>4 / 5 charge</strong></div>
+                <div class="fill-bar amber-fill"><span style="--fill: 80%;"></span></div>
               </div>
-              <div class="history-item">
-                <div><div class="history-title">Reminder</div><div class="history-time">One completed session today protects momentum</div></div>
-                <span class="tag-pill tag-stop">Alert</span>
+              <div class="history-stack compact-history">
+                <div class="history-item">
+                  <div><div class="history-title">Next best action</div><div class="history-time">Open a 25 minute coding block for Practice Set</div></div>
+                  <span class="tag-pill tag-sage">Good</span>
+                </div>
+                <div class="history-item">
+                  <div><div class="history-title">Reminder</div><div class="history-time">Carryover step is ready if you want the easiest restart</div></div>
+                  <span class="tag-pill tag-stop">Alert</span>
+                </div>
               </div>
-            </div>
           </div>
         </div>
 
         <div class="feature-card rose reveal visible reveal-delay-4">
           <div>
             <div class="feature-icon icon-rose">HIS</div>
-            <div class="feature-title">Session history that helps you improve</div>
-            <p class="feature-desc">Review what worked, capture blockers, and leave yourself a next step so each session makes the next one easier to begin and easier to finish well.</p>
+            <div class="feature-title">Session history that turns reflection into the next action</div>
+            <p class="feature-desc">Review what worked, capture blockers, update the outcome, and send your saved next step back to the queue so each session makes the next one easier to begin.</p>
           </div>
           <div>
             <div class="history-stack">
               <div class="history-item">
-                <div><div class="history-title">Physics Revision</div><div class="history-time">Notes saved - Blockers tracked - Next step ready</div></div>
+                <div><div class="history-title">Physics Revision</div><div class="history-time">Outcome updated - Notes saved - Next step ready</div></div>
                 <span class="tag-pill tag-sage">Done</span>
               </div>
               <div class="history-item">
-                <div><div class="history-title">Essay Draft</div><div class="history-time">Interrupted - Reflection still available</div></div>
+                <div><div class="history-title">Essay Draft</div><div class="history-time">Interrupted - Blocker captured - Queue handoff ready</div></div>
                 <span class="tag-pill tag-stop">Stopped</span>
               </div>
             </div>
             <div class="reflection-preview">
               <div class="reflection-line">Notes: outline finished, examples still missing</div>
-              <div class="reflection-line">Blockers: switched tasks too early</div>
-              <div class="reflection-line">Next step: draft intro tomorrow morning</div>
+              <div class="reflection-line">Blockers: phone interruption and hard transition</div>
+              <div class="reflection-line">Next step: send draft intro back to the queue</div>
             </div>
           </div>
         </div>
@@ -329,7 +329,7 @@
           <div>
             <div class="feature-icon icon-amber">STK</div>
             <div class="feature-title">Streaks that make consistency visible</div>
-            <p class="feature-desc">Watch your momentum build across the streak board and calendar so showing up feels tangible, gaps stand out early, and staying consistent gets easier.</p>
+            <p class="feature-desc">Watch your momentum build across the streak board and monthly calendar so active days, current streaks, and missed gaps are all visible before the routine slips too far.</p>
           </div>
           <div>
             <div class="streak-showcase" aria-hidden="true">
@@ -359,14 +359,14 @@
           <div>
             <div class="feature-icon icon-sage">ADM</div>
             <div class="feature-title">Reporting when you need visibility</div>
-            <p class="feature-desc">FortiFocus stays simple for students, but it also includes clean admin access, KPI review, filters, and exports for tutors, teams, or anyone who needs progress visibility.</p>
+            <p class="feature-desc">FortiFocus stays simple for students, but it now includes separate admin sign-in, env-based admin credentials, KPI review, user and session tables, filters, and CSV export when oversight matters.</p>
           </div>
           <div class="auth-admin-preview">
             <div class="auth-mini">
               <div class="auth-mini-head">User Access</div>
-              <div class="auth-field">Username</div>
-              <div class="auth-field">Email</div>
-              <div class="auth-field">Password with visibility toggle</div>
+              <div class="auth-field">Login and register tabs</div>
+              <div class="auth-field">Theme toggle before sign-in</div>
+              <div class="auth-field">Separate admin sign-in overlay</div>
             </div>
             <div class="admin-mini">
               <div class="admin-mini-top"><span>Admin Dashboard</span><strong>Refreshed now</strong></div>
@@ -378,7 +378,7 @@
               <div class="admin-list">
                 <div class="admin-list-item">Struggling users panel</div>
                 <div class="admin-list-item">User and session filters</div>
-                <div class="admin-list-item">CSV export + report flow</div>
+                <div class="admin-list-item">CSV export of full session logs</div>
               </div>
             </div>
           </div>
@@ -393,8 +393,132 @@
     <div class="container">
       <div class="reveal">
         <div class="section-label">See The Flow</div>
-        <h2 class="section-heading">From planning to payoff in one <em>guided experience</em></h2>
-        <p class="section-sub">FortiFocus replaces scattered study tools with one calm workflow that helps students plan, focus, review, and keep momentum going.</p>
+        <h2 class="section-heading">From launch to export in one <em>guided desktop experience</em></h2>
+        <p class="section-sub">FortiFocus replaces scattered study tools with one local workflow that helps students plan, focus, review, carry work forward, and export progress when needed.</p>
+      </div>
+
+      <div class="preview-gallery reveal visible reveal-delay-1">
+        <button
+          class="preview-launch"
+          type="button"
+          data-preview-template="preview-auth-template"
+          data-preview-title="Authentication Flow"
+          data-preview-copy="Open a larger preview of the sign-in experience, theme toggle, and separate admin access path."
+          aria-haspopup="dialog">
+          <div class="preview-launch-head">
+            <span class="preview-launch-kicker">Clickable Preview</span>
+            <span class="preview-launch-cta">Open</span>
+          </div>
+          <strong>Auth + Entry</strong>
+          <span class="preview-launch-copy">See how login, register, and admin access are grouped before the app opens.</span>
+          <div class="preview-window" aria-hidden="true">
+            <div class="preview-window-top">
+              <div class="preview-window-dots"><span></span><span></span><span></span></div>
+              <span>fortifocus-auth</span>
+            </div>
+            <div class="preview-window-body preview-window-auth">
+              <div class="preview-mini-card">
+                <div class="preview-mini-title">Welcome back</div>
+                <div class="preview-input-line"></div>
+                <div class="preview-input-line short"></div>
+                <div class="preview-button-bar"><span class="primary"></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </button>
+
+        <button
+          class="preview-launch"
+          type="button"
+          data-preview-template="preview-dashboard-template"
+          data-preview-title="Dashboard Preview"
+          data-preview-copy="Open a larger preview of today plan, fortress progress, reminders, and recent session insight cards."
+          aria-haspopup="dialog">
+          <div class="preview-launch-head">
+            <span class="preview-launch-kicker">Clickable Preview</span>
+            <span class="preview-launch-cta">Open</span>
+          </div>
+          <strong>Dashboard</strong>
+          <span class="preview-launch-copy">See the next best action, weekly goal pacing, and carryover reminders in one glance.</span>
+          <div class="preview-window" aria-hidden="true">
+            <div class="preview-window-top">
+              <div class="preview-window-dots"><span></span><span></span><span></span></div>
+              <span>fortifocus-dashboard</span>
+            </div>
+            <div class="preview-window-body preview-window-dashboard">
+              <div class="preview-stat-grid">
+                <div class="preview-stat-box"><strong>120m</strong><span>Today</span></div>
+                <div class="preview-stat-box"><strong>4/5</strong><span>Fortress</span></div>
+              </div>
+              <div class="preview-progress-line"><span style="--preview-fill: 72%;"></span></div>
+              <div class="preview-list">
+                <div class="preview-list-item"></div>
+                <div class="preview-list-item"></div>
+                <div class="preview-list-item short"></div>
+              </div>
+            </div>
+          </div>
+        </button>
+
+        <button
+          class="preview-launch"
+          type="button"
+          data-preview-template="preview-timer-template"
+          data-preview-title="Focus Timer Preview"
+          data-preview-copy="Open a larger preview of the timer board with the session ring, recommended duration, and music controls."
+          aria-haspopup="dialog">
+          <div class="preview-launch-head">
+            <span class="preview-launch-kicker">Clickable Preview</span>
+            <span class="preview-launch-cta">Open</span>
+          </div>
+          <strong>Timer Board</strong>
+          <span class="preview-launch-copy">See the recommended block, focus ring, and session controls in a larger pop-up.</span>
+          <div class="preview-window" aria-hidden="true">
+            <div class="preview-window-top">
+              <div class="preview-window-dots"><span></span><span></span><span></span></div>
+              <span>fortifocus-timer</span>
+            </div>
+            <div class="preview-window-body preview-window-timer">
+              <div class="preview-ring-shell">
+                <div class="preview-ring-circle"></div>
+                <div class="preview-ring-copy">25:00</div>
+              </div>
+              <div class="preview-pill-row"><span></span><span class="active"></span><span></span></div>
+            </div>
+          </div>
+        </button>
+
+        <button
+          class="preview-launch"
+          type="button"
+          data-preview-template="preview-admin-template"
+          data-preview-title="Admin Dashboard Preview"
+          data-preview-copy="Open a larger preview of the reporting view with KPI cards, activity lists, and session export coverage."
+          aria-haspopup="dialog">
+          <div class="preview-launch-head">
+            <span class="preview-launch-kicker">Clickable Preview</span>
+            <span class="preview-launch-cta">Open</span>
+          </div>
+          <strong>Admin View</strong>
+          <span class="preview-launch-copy">See the reporting side with KPIs, user review, and CSV export support.</span>
+          <div class="preview-window" aria-hidden="true">
+            <div class="preview-window-top">
+              <div class="preview-window-dots"><span></span><span></span><span></span></div>
+              <span>fortifocus-admin</span>
+            </div>
+            <div class="preview-window-body preview-window-admin">
+              <div class="preview-stat-grid admin">
+                <div class="preview-stat-box"><strong>128</strong><span>Users</span></div>
+                <div class="preview-stat-box"><strong>2460</strong><span>Sessions</span></div>
+              </div>
+              <div class="preview-table-lines">
+                <div class="preview-table-line"></div>
+                <div class="preview-table-line"></div>
+                <div class="preview-table-line short"></div>
+              </div>
+            </div>
+          </div>
+        </button>
       </div>
 
       <div class="tour-shell no-js-tour reveal visible reveal-delay-1">
@@ -402,24 +526,24 @@
           <article class="tour-panel active">
             <div class="tour-copy">
               <div class="section-label">Authentication</div>
-              <h3>Get in quickly and start with a clear next step.</h3>
-              <p>Simple login and registration keep friction low, while separate admin access keeps oversight clean without complicating the student experience.</p>
+              <h3>Get in quickly, switch theme early, and keep admin access separate.</h3>
+              <p>The JavaFX auth screen keeps login and registration simple, while a separate admin sign-in path keeps oversight clean without crowding the student workspace.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">Login + register</span>
-                <span class="tag-pill tag-sage">Password visibility</span>
+                <span class="tag-pill tag-sage">Theme toggle</span>
                 <span class="tag-pill tag-sage">Admin authentication</span>
               </div>
             </div>
             <div class="tour-preview">
               <div class="tour-preview-head">Authentication Flow</div>
               <div class="tour-metrics">
-                <div class="tour-metric"><span>Validation</span><strong>Email, confirm password, strength checks</strong></div>
-                <div class="tour-metric"><span>Access</span><strong>User flow and admin overlay stay separate</strong></div>
+                <div class="tour-metric"><span>Validation</span><strong>Username, email, password, and confirmation checks</strong></div>
+                <div class="tour-metric"><span>Access</span><strong>User workspace and admin overlay stay separate</strong></div>
               </div>
               <div class="tour-list">
                 <div class="tour-list-item">Username and email input fields</div>
-                <div class="tour-list-item">Password rules: length, number, uppercase, special character</div>
-                <div class="tour-list-item">Theme toggle available before entering the app</div>
+                <div class="tour-list-item">Password visibility toggle and sign-in switch</div>
+                <div class="tour-list-item">Admin credentials can come from <code>.env</code> or environment variables</div>
               </div>
             </div>
           </article>
@@ -428,23 +552,23 @@
             <div class="tour-copy">
               <div class="section-label">Dashboard</div>
               <h3>Know what matters before you lose momentum.</h3>
-              <p>The dashboard surfaces today's target, weekly progress, reminders, recommendations, and recent wins so you're never guessing where to focus next.</p>
+              <p>The dashboard surfaces today's target, weekly goal, fortress progress, recovery guidance, recommendations, and recent wins so the next block is easy to pick.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">Today plan</span>
-                <span class="tag-pill tag-sage">Trend charts</span>
-                <span class="tag-pill tag-sage">Export report</span>
+                <span class="tag-pill tag-sage">Weekly goal</span>
+                <span class="tag-pill tag-sage">TXT export</span>
               </div>
             </div>
             <div class="tour-preview">
               <div class="tour-preview-head">Dashboard Flow</div>
               <div class="tour-metrics">
                 <div class="tour-metric"><span>Recommendation</span><strong>Best session duration learned from your history</strong></div>
-                <div class="tour-metric"><span>Insights</span><strong>Best focus window, weak subjects, recovery moves</strong></div>
+                <div class="tour-metric"><span>Recovery</span><strong>Queue pressure, reminders, and restart guidance</strong></div>
               </div>
               <div class="tour-list">
                 <div class="tour-list-item">Weekly goal editing with live progress</div>
-                <div class="tour-list-item">Achievement progress for streaks, hours, sessions, and active days</div>
-                <div class="tour-list-item">Recent sessions list with fast navigation back into focus mode</div>
+                <div class="tour-list-item">Fortress charge and achievement progress for streaks, hours, sessions, and active days</div>
+                <div class="tour-list-item">Recent sessions list with TXT report export from the same page</div>
               </div>
             </div>
           </article>
@@ -453,9 +577,10 @@
             <div class="tour-copy">
               <div class="section-label">Timer</div>
               <h3>Focus without second-guessing yourself.</h3>
-              <p>Start a timed session fast, use presets or custom lengths, and keep distractions low while the app tracks progress and keeps your plan in view.</p>
+              <p>Start a timed session fast, use recommended or custom lengths, choose the right focus mode, and keep distractions low while the app tracks progress and the queue stays in view.</p>
               <div class="tour-pills">
                 <span class="tag-pill tag-sage">Custom durations</span>
+                <span class="tag-pill tag-sage">Focus modes</span>
                 <span class="tag-pill tag-sage">Music presets</span>
                 <span class="tag-pill tag-sage">Focus mode lock</span>
               </div>
@@ -464,12 +589,12 @@
               <div class="tour-preview-head">Timer Flow</div>
               <div class="tour-metrics">
                 <div class="tour-metric"><span>Session states</span><strong>Idle, running, paused, interrupted, completed</strong></div>
-                <div class="tour-metric"><span>Planner sync</span><strong>Queue fields save subject, time, due date, priority, and minutes</strong></div>
+                <div class="tour-metric"><span>Queue sync</span><strong>Queue fields save subject, time, due date, priority, and minutes</strong></div>
               </div>
               <div class="tour-list">
-                <div class="tour-list-item">Preset buttons plus custom session length input</div>
+                <div class="tour-list-item">Preset buttons plus custom session lengths starting at 15 minutes</div>
                 <div class="tour-list-item">Motivational quote rotation updates both board and focus mode</div>
-                <div class="tour-list-item">Auto-log completed or interrupted sessions to history</div>
+                <div class="tour-list-item">Auto-log completed or interrupted sessions with interruption reasons</div>
               </div>
             </div>
           </article>
@@ -478,23 +603,24 @@
             <div class="tour-copy">
               <div class="section-label">History</div>
               <h3>Review sessions so tomorrow gets easier.</h3>
-              <p>Notes, blockers, and next steps turn your session history into a feedback loop instead of a forgotten log.</p>
+              <p>Outcomes, notes, blockers, and next steps turn your session history into a feedback loop instead of a forgotten log, and that next step can go straight back to the queue.</p>
               <div class="tour-pills">
+                <span class="tag-pill tag-sage">Outcome</span>
                 <span class="tag-pill tag-sage">Notes</span>
                 <span class="tag-pill tag-sage">Blockers</span>
-                <span class="tag-pill tag-sage">Next step</span>
+                <span class="tag-pill tag-sage">Queue handoff</span>
               </div>
             </div>
             <div class="tour-preview">
               <div class="tour-preview-head">History Flow</div>
               <div class="tour-metrics">
                 <div class="tour-metric"><span>Review</span><strong>Completed and interrupted sessions stay editable</strong></div>
-                <div class="tour-metric"><span>Cleanup</span><strong>Delete entries with confirmation when needed</strong></div>
+                <div class="tour-metric"><span>Handoff</span><strong>Send the saved next step back into the queue</strong></div>
               </div>
               <div class="tour-list">
-                <div class="tour-list-item">Open notes from any history row</div>
-                <div class="tour-list-item">Keep reflections attached to the original session</div>
-                <div class="tour-list-item">Use history to learn what repeatedly causes interruptions</div>
+                <div class="tour-list-item">Open reflections from any history row</div>
+                <div class="tour-list-item">Keep notes, blockers, and outcome attached to the original session</div>
+                <div class="tour-list-item">Delete entries with confirmation when cleanup is needed</div>
               </div>
             </div>
           </article>
@@ -528,10 +654,10 @@
             <div class="tour-copy">
               <div class="section-label">Admin</div>
               <h3>Keep reporting simple when others need visibility.</h3>
-              <p>Admins can review activity, track engagement, and export records without turning the student flow into something cluttered or heavy.</p>
+              <p>Admins can review activity, inspect user details, delete users with confirmation, and export full session records without turning the student flow into something cluttered or heavy.</p>
               <div class="tour-pills">
-                <span class="tag-pill tag-sage">User management</span>
-                <span class="tag-pill tag-sage">Session filtering</span>
+                <span class="tag-pill tag-sage">User table</span>
+                <span class="tag-pill tag-sage">Session log</span>
                 <span class="tag-pill tag-sage">CSV export</span>
               </div>
             </div>
@@ -557,18 +683,18 @@
 
   <section id="stats" class="section-shell">
     <div class="container">
-      <div class="reveal">
-        <div class="section-label">Why It Works</div>
-        <h2 class="section-heading">The system turns good intentions into <em>visible progress</em></h2>
-        <p class="section-sub">FortiFocus combines clarity, structure, and feedback so it becomes easier to keep showing up, even on the days when motivation is low.</p>
-      </div>
+        <div class="reveal">
+          <div class="section-label">Why It Works</div>
+          <h2 class="section-heading">The system turns good intentions into <em>visible next actions</em></h2>
+          <p class="section-sub">FortiFocus combines queue clarity, weekly goal pacing, reflections, and exportable reports so it becomes easier to keep showing up, even when motivation is low.</p>
+        </div>
 
       <div class="stats-showcase">
         <div class="stat-showcase-card accent-amber reveal visible reveal-delay-1">
-          <div class="ssc-kicker">Clarity</div>
-          <div class="ssc-val">Today</div>
-          <div class="ssc-label">Know what to do next</div>
-          <div class="ssc-sub">instead of wasting energy deciding</div>
+          <div class="ssc-kicker">Queue</div>
+          <div class="ssc-val">Next</div>
+          <div class="ssc-label">See the next task immediately</div>
+          <div class="ssc-sub">instead of spending energy rebuilding context</div>
         </div>
         <div class="stat-showcase-card accent-sky reveal visible reveal-delay-2">
           <div class="ssc-kicker">Momentum</div>
@@ -577,34 +703,81 @@
           <div class="ssc-sub">from the sessions you actually finish</div>
         </div>
         <div class="stat-showcase-card accent-sage reveal visible reveal-delay-3">
-          <div class="ssc-kicker">Feedback</div>
-          <div class="ssc-val">Top 5</div>
-          <div class="ssc-label">See where your effort is going</div>
-          <div class="ssc-sub">through subjects, trends, and recent results</div>
+          <div class="ssc-kicker">Recovery</div>
+          <div class="ssc-val">Plan</div>
+          <div class="ssc-label">Get restart guidance when momentum slips</div>
+          <div class="ssc-sub">through reminders, recovery plans, and carryover steps</div>
         </div>
         <div class="stat-showcase-card accent-rose reveal visible reveal-delay-4">
-          <div class="ssc-kicker">Consistency</div>
-          <div class="ssc-val">4</div>
-          <div class="ssc-label">Multiple progress signals</div>
-          <div class="ssc-sub">goals, streaks, sessions, and active days</div>
+          <div class="ssc-kicker">Exports</div>
+          <div class="ssc-val">2</div>
+          <div class="ssc-label">Built-in reporting outputs</div>
+          <div class="ssc-sub">user TXT reports and admin CSV exports</div>
         </div>
       </div>
 
       <div class="insight-panel reveal reveal-delay-2">
         <div class="insight-copy">
           <div class="section-label">Visibility</div>
-          <h3>Students get motivation. Teams get clean reporting.</h3>
-          <p>The same system that helps students stay on track also makes progress easy to review, filter, and export when visibility matters.</p>
+          <h3>Students get direction. Admins get clean reporting.</h3>
+          <p>The same desktop system that helps students stay on track also makes progress easy to review, filter, and export when visibility matters.</p>
         </div>
         <div class="insight-bars animate-on-view is-live">
-          <div class="insight-bar"><span style="--fill: 92%;"></span><label>Users</label></div>
-          <div class="insight-bar"><span style="--fill: 84%;"></span><label>Focus</label></div>
+          <div class="insight-bar"><span style="--fill: 92%;"></span><label>Queue</label></div>
+          <div class="insight-bar"><span style="--fill: 84%;"></span><label>Goal</label></div>
           <div class="insight-bar"><span style="--fill: 68%;"></span><label>Done</label></div>
-          <div class="insight-bar"><span style="--fill: 57%;"></span><label>Alert</label></div>
+          <div class="insight-bar"><span style="--fill: 57%;"></span><label>Retry</label></div>
           <div class="insight-bar"><span style="--fill: 76%;"></span><label>Trend</label></div>
           <div class="insight-bar"><span style="--fill: 71%;"></span><label>CSV</label></div>
-          <div class="insight-bar"><span style="--fill: 88%;"></span><label>Active</label></div>
+          <div class="insight-bar"><span style="--fill: 88%;"></span><label>TXT</label></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="setup" class="section-shell section-muted">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Desktop Setup</div>
+        <h2 class="section-heading">Run FortiFocus locally, configure admin access, or <em>share a Windows build</em></h2>
+        <p class="section-sub">The current app is a JavaFX desktop project. You can launch it with Maven, load admin credentials from <code>.env</code> or environment variables, and package a shareable Windows app-image with a bundled Java runtime.</p>
+      </div>
+
+      <div class="quick-proof-grid setup-grid reveal visible reveal-delay-1">
+        <article class="quick-proof-card accent">
+          <span class="quick-proof-kicker">Run</span>
+          <h3>Launch with Maven</h3>
+          <p>Use <code>run-fortifocus.bat</code>, <code>run-fortifocus.ps1</code>, or run <code>mvn javafx:run</code> from the project root to open the desktop app.</p>
+          <div class="tag-row">
+            <span class="tag-pill tag-sage">Java 17+</span>
+            <span class="tag-pill tag-sage">JavaFX 21</span>
+            <span class="tag-pill tag-sage">Maven launch</span>
+          </div>
+        </article>
+
+        <article class="quick-proof-card">
+          <span class="quick-proof-kicker">Admin</span>
+          <h3>Configure admin access</h3>
+          <p>Copy <code>.env.example</code> to <code>.env</code> or set <code>FORTIFOCUS_ADMIN_USERNAME</code> and <code>FORTIFOCUS_ADMIN_PASSWORD</code> in your environment before opening the admin sign-in flow.</p>
+          <div class="tag-row">
+            <span class="tag-pill tag-stop">.env</span>
+            <span class="tag-pill tag-stop">Env vars</span>
+            <span class="tag-pill tag-stop">Separate overlay</span>
+          </div>
+        </article>
+
+        <article class="quick-proof-card">
+          <span class="quick-proof-kicker">Share</span>
+          <h3>Build a Windows app-image</h3>
+          <p>Run <code>build-shareable.bat</code> to generate a FortiFocus app-image and zip. The packaged build includes its own Java runtime, so your friend does not need Java installed.</p>
+          <div class="tag-row">
+            <span class="tag-pill tag-sage">FortiFocus.exe</span>
+            <span class="tag-pill tag-sage">Bundled runtime</span>
+            <span class="tag-pill tag-sage">ZIP output</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -615,16 +788,16 @@
     <div class="container">
       <div class="reveal">
         <div class="section-label">How It Works</div>
-        <h2 class="section-heading">A study routine you can actually <em>stick with</em></h2>
+        <h2 class="section-heading">A desktop study routine you can actually <em>stick with</em></h2>
       </div>
 
       <div class="steps-grid">
-        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">1</div><div class="step-title">Open FortiFocus</div><p class="step-desc">Start in a clean space that makes it obvious what matters today.</p></div>
-        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">2</div><div class="step-title">Choose Your Priorities</div><p class="step-desc">Line up the next few tasks so your brain does less deciding and more doing.</p></div>
-        <div class="step-card reveal visible reveal-delay-3"><div class="step-num">3</div><div class="step-title">Run One Focus Session</div><p class="step-desc">Use a preset or custom timer and let the app keep your attention anchored.</p></div>
-        <div class="step-card reveal visible reveal-delay-4"><div class="step-num">4</div><div class="step-title">Let Progress Log Itself</div><p class="step-desc">Sessions, time, and outcomes are tracked automatically as you go.</p></div>
-        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">5</div><div class="step-title">Review What Helped</div><p class="step-desc">Save notes, blockers, and next steps so tomorrow starts with more clarity.</p></div>
-        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">6</div><div class="step-title">Build Momentum Daily</div><p class="step-desc">Protect your streak, track your growth, and keep the routine moving.</p></div>
+        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">1</div><div class="step-title">Launch The App</div><p class="step-desc">Open the JavaFX desktop app, sign in, and land in a workspace that already knows your study context.</p></div>
+        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">2</div><div class="step-title">Pick The Next Queue Item</div><p class="step-desc">Use the queue or carryover next step so your brain does less deciding before you begin.</p></div>
+        <div class="step-card reveal visible reveal-delay-3"><div class="step-num">3</div><div class="step-title">Run A Recommended Block</div><p class="step-desc">Choose a focus mode, use a preset or custom duration, and let the app anchor the session.</p></div>
+        <div class="step-card reveal visible reveal-delay-4"><div class="step-num">4</div><div class="step-title">Track Goal And Fortress</div><p class="step-desc">See weekly progress, fortress charge, streaks, and recovery guidance update as you work.</p></div>
+        <div class="step-card reveal visible reveal-delay-1"><div class="step-num">5</div><div class="step-title">Reflect And Hand Off</div><p class="step-desc">Save outcome, notes, blockers, and the next step, then send that next step back into the queue.</p></div>
+        <div class="step-card reveal visible reveal-delay-2"><div class="step-num">6</div><div class="step-title">Export When Needed</div><p class="step-desc">Generate a personal TXT report or use the admin dashboard to export the full session log as CSV.</p></div>
       </div>
     </div>
   </section>
@@ -635,21 +808,21 @@
     <div class="container">
       <div class="reveal">
         <div class="section-label">What Makes It Feel Better</div>
-        <h2 class="section-heading">Built to feel more <em>focused</em> than a basic study timer</h2>
+        <h2 class="section-heading">Built to feel more <em>complete</em> than a basic study timer</h2>
       </div>
 
       <div class="testimonials-grid">
         <div class="testi-card reveal visible reveal-delay-1">
-          <p class="testi-quote">Instead of jumping between a timer, notes app, planner, and spreadsheet, FortiFocus keeps the full study loop in one place.</p>
-          <div class="testi-author"><div class="testi-avatar testi-avatar-sage">ONE</div><div><div class="testi-name">One focused workflow</div><div class="testi-role">Less tab switching</div></div></div>
+          <p class="testi-quote">Instead of jumping between a timer, notes app, planner, and export sheet, FortiFocus keeps the full desktop study loop in one place.</p>
+          <div class="testi-author"><div class="testi-avatar testi-avatar-sage">ONE</div><div><div class="testi-name">One desktop workflow</div><div class="testi-role">Less setup friction</div></div></div>
         </div>
         <div class="testi-card reveal visible reveal-delay-2">
-          <p class="testi-quote">The app makes progress visible while you are still in the middle of building it, which is what helps consistency last longer than motivation alone.</p>
-          <div class="testi-author"><div class="testi-avatar testi-avatar-sky">CAL</div><div><div class="testi-name">Visible momentum</div><div class="testi-role">Goals, streaks, and history</div></div></div>
+          <p class="testi-quote">The app makes progress visible while you are still building it, and reflection-to-queue makes tomorrow easier than starting from a blank page again.</p>
+          <div class="testi-author"><div class="testi-avatar testi-avatar-sky">CAL</div><div><div class="testi-name">Visible momentum</div><div class="testi-role">Goals, fortress, and carryover</div></div></div>
         </div>
         <div class="testi-card reveal visible reveal-delay-3">
-          <p class="testi-quote">When someone else needs visibility, reports and exports are already there without turning the student experience into something cluttered.</p>
-          <div class="testi-author"><div class="testi-avatar testi-avatar-amber">REP</div><div><div class="testi-name">Ready for reporting</div><div class="testi-role">Admin and export tools</div></div></div>
+          <p class="testi-quote">When someone else needs visibility, TXT reports and admin CSV export are already there without turning the student experience into something cluttered.</p>
+          <div class="testi-author"><div class="testi-avatar testi-avatar-amber">REP</div><div><div class="testi-name">Ready for reporting</div><div class="testi-role">Admin dashboard and exports</div></div></div>
         </div>
       </div>
     </div>
@@ -660,33 +833,33 @@
   <section class="section-shell cta-wrap">
     <div class="container">
       <div class="cta-section reveal">
-        <div class="section-label cta-label">READY TO FOCUS</div>
-        <h2>Give your study routine a system that actually <em>keeps you moving</em></h2>
-        <p>FortiFocus helps students start faster, stay consistent, and see real progress in one calm desktop experience.</p>
+        <div class="section-label cta-label">READY TO RUN</div>
+        <h2>Give your desktop study routine a system that actually <em>keeps you moving</em></h2>
+        <p>FortiFocus helps students launch faster, stay consistent, carry work forward, and export progress from one calm desktop experience.</p>
         <div class="cta-actions">
-          <a href="#experience" class="btn-hero btn-hero-primary">Explore The Demo</a>
+          <a href="#setup" class="btn-hero btn-hero-primary">View Desktop Setup</a>
           <a href="#admin" class="btn-hero btn-hero-ghost">See Reporting View</a>
         </div>
         <div class="cta-glance">
           <div class="cta-glance-title">What should feel obvious right away</div>
           <div class="cta-glance-grid">
-            <div class="cta-glance-card"><span>Start fast</span><strong>Get from login to your first focused session without extra friction.</strong></div>
-            <div class="cta-glance-card"><span>Stay focused</span><strong>Use one clear system for planning, timing, streaks, and reflection.</strong></div>
-            <div class="cta-glance-card"><span>See progress</span><strong>Watch goals, history, and reports turn effort into visible proof.</strong></div>
+            <div class="cta-glance-card"><span>Launch fast</span><strong>Get from desktop launch to your first focused session without extra setup friction.</strong></div>
+            <div class="cta-glance-card"><span>Stay focused</span><strong>Use one clear system for queue planning, timing, streaks, and reflection.</strong></div>
+            <div class="cta-glance-card"><span>See progress</span><strong>Watch goals, history, TXT reports, and CSV exports turn effort into visible proof.</strong></div>
           </div>
           <div class="cta-routine">
             <div class="cta-routine-label">Core loop</div>
             <div class="cta-routine-steps">
-              <div class="cta-routine-step">Plan</div>
+              <div class="cta-routine-step">Queue</div>
               <div class="cta-routine-step">Focus</div>
-              <div class="cta-routine-step">Review</div>
-              <div class="cta-routine-step">Repeat</div>
+              <div class="cta-routine-step">Reflect</div>
+              <div class="cta-routine-step">Carry</div>
             </div>
           </div>
         </div>
         <div class="cta-badges">
-          <div class="cta-badge"><div class="badge-check">&#10003;</div> Clear daily plan</div>
-          <div class="cta-badge"><div class="badge-check">&#10003;</div> Built for consistency</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> JavaFX desktop flow</div>
+          <div class="cta-badge"><div class="badge-check">&#10003;</div> Carryover-ready sessions</div>
           <div class="cta-badge"><div class="badge-check">&#10003;</div> Reports when needed</div>
         </div>
       </div>
@@ -699,10 +872,156 @@
   <div class="footer-copy">&copy; 2026 FortiFocus. Built to help learners follow through.</div>
   <div class="footer-links">
     <a href="#features">Benefits</a>
-    <a href="#experience">Demo</a>
+    <a href="#setup">Setup</a>
     <a href="#admin">Reporting</a>
   </div>
 </footer>
+
+<div class="preview-modal" id="appPreviewModal" hidden>
+  <div class="preview-modal-backdrop" data-preview-close></div>
+  <div class="preview-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="appPreviewTitle">
+    <button class="preview-modal-close" id="appPreviewClose" type="button" aria-label="Close preview" data-preview-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="preview-modal-copy">
+      <div class="section-label">App Preview</div>
+      <h3 id="appPreviewTitle"></h3>
+      <p id="appPreviewText"></p>
+    </div>
+    <div class="preview-modal-canvas" id="appPreviewBody"></div>
+  </div>
+</div>
+
+<template id="preview-auth-template">
+  <div class="preview-screen">
+    <div class="preview-window-top">
+      <div class="preview-window-dots"><span></span><span></span><span></span></div>
+      <span>fortifocus-auth</span>
+    </div>
+    <div class="preview-screen-grid two-col">
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Student Sign In</span>
+        <h4>Return to your focus flow</h4>
+        <div class="preview-field-stack">
+          <div class="preview-field"><span>Username</span></div>
+          <div class="preview-field"><span>Password</span></div>
+          <div class="preview-action-row"><span class="preview-action primary">Log in</span><span class="preview-action ghost">Sign up</span></div>
+        </div>
+      </div>
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Entry Tools</span>
+        <div class="preview-stack-list">
+          <div class="preview-stack-item">Theme toggle available before sign-in</div>
+          <div class="preview-stack-item">Register flow with email and password confirmation</div>
+          <div class="preview-stack-item">Separate admin sign-in overlay</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="preview-dashboard-template">
+  <div class="preview-screen">
+    <div class="preview-window-top">
+      <div class="preview-window-dots"><span></span><span></span><span></span></div>
+      <span>fortifocus-dashboard</span>
+    </div>
+    <div class="preview-screen-grid">
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Today Plan</span>
+        <div class="preview-stat-grid wide">
+          <div class="preview-stat-box"><strong>120m</strong><span>Target</span></div>
+          <div class="preview-stat-box"><strong>80m</strong><span>Done</span></div>
+          <div class="preview-stat-box"><strong>40m</strong><span>Left</span></div>
+        </div>
+        <div class="preview-progress-line"><span style="--preview-fill: 67%;"></span></div>
+      </div>
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Fortress + Goal</span>
+        <div class="preview-stack-list">
+          <div class="preview-stack-item">Fortress charge: 4 / 5</div>
+          <div class="preview-stack-item">Weekly goal: 640 / 800 minutes</div>
+          <div class="preview-stack-item">Recommendation: start a 25 minute coding block</div>
+        </div>
+      </div>
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Recovery + Reminder</span>
+        <div class="preview-stack-list">
+          <div class="preview-stack-item">Carryover step is ready to restart fast</div>
+          <div class="preview-stack-item">Queue pressure is steady today</div>
+          <div class="preview-stack-item">TXT report export lives on this page</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="preview-timer-template">
+  <div class="preview-screen">
+    <div class="preview-window-top">
+      <div class="preview-window-dots"><span></span><span></span><span></span></div>
+      <span>fortifocus-timer</span>
+    </div>
+    <div class="preview-screen-grid two-col timer-layout">
+      <div class="preview-screen-card center">
+        <div class="preview-ring-shell large">
+          <div class="preview-ring-circle"></div>
+          <div class="preview-ring-copy stacked"><strong>25:00</strong><span>Deep Work</span></div>
+        </div>
+        <div class="preview-pill-row"><span></span><span class="active"></span><span></span><span></span></div>
+      </div>
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Session Setup</span>
+        <div class="preview-field-stack">
+          <div class="preview-field"><span>Task: Practice Set</span></div>
+          <div class="preview-field"><span>Goal: Finish one clean checkpoint</span></div>
+          <div class="preview-field"><span>Music: Lofi Rain</span></div>
+        </div>
+        <div class="preview-stack-list">
+          <div class="preview-stack-item">Recommended duration: 25 minutes</div>
+          <div class="preview-stack-item">Modes: Deep Work, Coding, Reading, Writing</div>
+          <div class="preview-stack-item">Interruption reasons stay attached if the session stops</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="preview-admin-template">
+  <div class="preview-screen">
+    <div class="preview-window-top">
+      <div class="preview-window-dots"><span></span><span></span><span></span></div>
+      <span>fortifocus-admin</span>
+    </div>
+    <div class="preview-screen-grid">
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Top KPIs</span>
+        <div class="preview-stat-grid wide">
+          <div class="preview-stat-box"><strong>128</strong><span>Users</span></div>
+          <div class="preview-stat-box"><strong>2460</strong><span>Sessions</span></div>
+          <div class="preview-stat-box"><strong>41k</strong><span>Focus</span></div>
+        </div>
+      </div>
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Reporting Tools</span>
+        <div class="preview-stack-list">
+          <div class="preview-stack-item">Struggling users panel</div>
+          <div class="preview-stack-item">Filters for username, email, subject, status, and activity</div>
+          <div class="preview-stack-item">CSV export of the full session log</div>
+        </div>
+      </div>
+      <div class="preview-screen-card">
+        <span class="preview-screen-kicker">Tables</span>
+        <div class="preview-table-lines">
+          <div class="preview-table-line"></div>
+          <div class="preview-table-line"></div>
+          <div class="preview-table-line"></div>
+          <div class="preview-table-line short"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
 <script defer src="assets/js/modules/theme.js"></script>
 <script defer src="assets/js/modules/reveal.js"></script>
@@ -710,6 +1029,7 @@
 <script defer src="assets/js/modules/streak-grid.js"></script>
 <script defer src="assets/js/modules/durations.js"></script>
 <script defer src="assets/js/modules/scroll-ui.js"></script>
+<script defer src="assets/js/modules/app-preview.js"></script>
 <script defer src="assets/js/modules/init.js"></script>
 </body>
 </html>

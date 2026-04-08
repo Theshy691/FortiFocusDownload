@@ -29,3 +29,7 @@ if (typeof cycleDurations === "function") {
 if (typeof initScrollUI === "function") {
   initScrollUI({ siteNav, pageProgress });
 }
+
+if (typeof initAppPreview === "function") {
+  initAppPreview();
+}
